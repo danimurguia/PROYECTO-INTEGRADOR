@@ -42,6 +42,7 @@ body{
 .card{
     width: 300px;
     margin: 10px;
+    border: none;
     transition: all 300ms;
 }
 
