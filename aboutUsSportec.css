@@ -9,15 +9,35 @@
     color: black;
     margin-top: 20px;
 }
+
 h1{
     color: rgb(114, 7, 146);
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-
+    margin-top: 20px;
 }
-#containerTarjetasSportec{
-    color:black ;
+
+h2{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h3{
+    color: black;
+    text-align: left;
+    font-size: 25px;
+}
+
+p{
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
 }
 *{
     margin: 0;
@@ -28,6 +48,10 @@ h1{
 
 body{
     background-color: rgb(255, 255, 255);
+}
+
+#containerTarjetasSportec{
+    color:black ;
 }
 
 .container__cards{
