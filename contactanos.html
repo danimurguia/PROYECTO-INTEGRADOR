@@ -18,7 +18,7 @@
     <div class="row">
       <div class= "col-12">
         <div class="row justify-content-center">
-          <form class="seccion-form" action="javascript:enviarCorreo();">
+          <form class="seccion-form" action="javascript:enviarCorreo()">
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre completo</label>
               <input type="text" class="form-control formulario "  id="nombre" placeholder="Ingresa tu nombre" required>
@@ -41,6 +41,9 @@
             </div>
 
             <button type="submit" class="btn btn-outline-light">Enviar</button>
+            <br><br>
+            <h6 id="msgEmail" style="color: rgb(0, 95, 0); text-align: end;" hidden>¡Mensaje enviado!</h6>
+            <h6 id="msgEmailError" style="color: rgb(182, 0, 0);  text-align: end;" hidden>Error al enviar mensaje</h6>
             
           </form>
         </div>
@@ -50,7 +53,7 @@
   </div>
 
   
-  
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
   <script src="javascript/contactanos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
