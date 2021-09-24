@@ -89,11 +89,24 @@ body{
 }
 
 .card1{
-	background-image: url(Imagenes/Daniel.png);
+	background-image: url(Imagenes/Daniel.png);/*Aqui va la imagen que va dentro de la tarjeta*/
 	background-size: cover;
 }
 
 .card2{
-	background-image: url(Imagenes/Maritza.png);
+	background-image: url(Imagenes/Maritza.png);/*Aqui va la imagen que va dentro de la tarjeta2*/
 	background-size: cover;
+}
+
+header{
+	margin-bottom: 25px;
+}
+
+footer{
+	background-color: black;
+}
+footer img{
+	position: relative;
+	top: 0px;
+	left: 0px;
 }
