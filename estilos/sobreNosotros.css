@@ -86,3 +86,19 @@
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 }
+
+.logoCodeFooter{
+  position: absolute;
+  width: 11.5%;
+  right: 1%; 
+}
+.logoCodeFooter:hover{
+  opacity: 50%;
+}
+
+.headerLogoFooter{
+  position: absolute;
+  right: 13%;
+  
+  
+}
