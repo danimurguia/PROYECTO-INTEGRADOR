@@ -22,7 +22,6 @@
   position: absolute;
   width: 11.5%;
   right: 1%;
- 
 }
 .logoCodeFooter:hover{
   opacity: 50%;
@@ -31,6 +30,9 @@
 .headerLogoFooter{
   position: absolute;
   right: 13%;
- 
+}
+
+.contenedorCategorias img{
   
+  height: 286px;
 }
