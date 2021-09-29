@@ -1,3 +1,4 @@
+
 *{
 	margin: 0;
 	padding: 0;
@@ -110,6 +111,20 @@ footer img{
 	top: 0px;
 	left: 0px;
 }
-footer .col{
-	
+
+.logoCodeFooter{
+  position: relative;
+  width: 11.5%;
+  left: 38.5%;
+ 
+}
+.logoCodeFooter:hover{
+  opacity: 50%;
+}
+
+.headerLogoFooter{
+  position: absolute;
+  right: 13%;
+  
+  
 }

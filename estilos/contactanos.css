@@ -16,3 +16,21 @@ border-radius: 1em;
 padding: 2em;
 font-weight: bold;
 }
+
+
+.logoCodeFooter{
+  position: absolute;
+  width: 11.5%;
+  right: 1%;
+ 
+}
+.logoCodeFooter:hover{
+  opacity: 50%;
+}
+
+.headerLogoFooter{
+  position: absolute;
+  right: 13%;
+  
+  
+}

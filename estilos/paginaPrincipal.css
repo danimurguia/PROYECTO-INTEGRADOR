@@ -1,6 +1,5 @@
 .contenedorCarrusel img{
   height: 500px;
-  
 }
 .contenedorCarrusel{
   margin-bottom: 0px;
@@ -19,4 +18,19 @@
   padding: 10px;
 }
 
+.logoCodeFooter{
+  position: absolute;
+  width: 11.5%;
+  right: 1%;
+ 
+}
+.logoCodeFooter:hover{
+  opacity: 50%;
+}
 
+.headerLogoFooter{
+  position: absolute;
+  right: 13%;
+ 
+  
+}
