@@ -1,0 +1,22 @@
+.contenedorCarrusel img{
+  height: 500px;
+  
+}
+.contenedorCarrusel{
+  margin-bottom: 0px;
+  background-color: transparent;
+}
+
+.entrenadores {
+  padding: 50px;  
+  margin-bottom: 20px;
+}
+.entrenadores img{
+  height: 300px;
+}
+
+.contenedorCategorias{
+  padding: 10px;
+}
+
+
