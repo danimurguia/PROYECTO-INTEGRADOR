@@ -2,7 +2,6 @@
   position: absolute;
   width: 11.5%;
   right: 1%;
- 
 }
 .logoCodeFooter:hover{
   opacity: 50%;
@@ -14,3 +13,17 @@
   
   
 }
+.container{
+height: 450px;
+padding: 10px;
+}
+
+.contenedorTarjetitas{
+  height: 450px;
+  padding: 10px;
+}
+.card{
+  padding: 10px;
+}
+
+
