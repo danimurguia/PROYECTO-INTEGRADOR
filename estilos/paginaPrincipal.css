@@ -43,3 +43,7 @@
   
   height: 286px;
 }
+
+.card-text{
+  text-align: left;
+}
