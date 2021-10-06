@@ -13,10 +13,10 @@
 
 <body>
   <!--Barra de navegación-->
-  <header>
+  <header class="sticky-top">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <img width="12%" type="button"   src="/Imagenes/logoCfit3.svg" alt="logoCfit" onclick= "window.location.href = ('/html/paginaPrincipal.html')">
+      <img width="12%" type="button" src="/Imagenes/logoCfit3.svg" alt="logoCfit" onclick= "window.location.href = ('/html/paginaPrincipal.html')">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -79,35 +79,33 @@
           <img class="d-block w-100" src="../Imagenes/SobreCFit/carruselCF.jpg" alt="First slide">
           <div class="carousel-caption d-none d-md-block row"
             style="background-color: rgba(0, 0, 0, 0.6); border-radius: 15px;">
-            <h1 style="color: white; font-size: 4em; ">¿Quiénes somos?</h1>
+            <h1 style="color: white; font-size: 4em;">¿Quiénes somos?</h1>
+            <p style="font-size: 1.2em; text-align: justify; ">Surgimos a causa de una necesidad básica que se ha ignorado desde hace tiempo; la
+              actividad física. Queremos lograr que esta sea fácil, cómoda y accesible a todas las personas. Ir a una tienda
+              deportiva o visitar un gimnasio puede ser abrumador al no tener conocimiento del tema, pero en ConsultaFit no es
+              así. Nuestro equipo especializado te ayudará a lograr tus metas de una manera eficáz, accesible y
+              personalizada. No sólo ofrecemos entrenamiento personalizado, sino tambien ropa y equipamento. Date una vuelta
+              por nuestro sitio web y conoce todo lo que tenemos por ofrecerte.</p>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="container" id="containerAboutUsSportec" style="margin-top: 2em;">
-      <div class="row" style="color: black;">
-        <p style="font-size: 1.2em; text-align: justify; ">Surgimos a causa de una necesidad básica que se ha ignorado desde hace tiempo: la
-          actividad física. Queremos lograr que esta sea fácil, cómoda y accesible a todas las personas. Ir a una tienda
-          deportiva o visitar un gimnasio puede ser abrumador al no tener conocimiento del tema, pero en Sportec no es
-          así. Nuestro equipo especializado te ayudará a lograr tus metas de una manera eficáz, accesible y
-          personalizada. No sólo ofrecemos entrenamiento personalizado, sino tambien ropa y equipamento. Date una vuelta
-          por nuestro sitio web y conoce todo lo que tenemos por ofrecerte.</p>
-      </div>
+<!--
+    <div class="container" id="containerAboutUsSportec" style="margin-top: 2em; margin-bottom: 2em;" >
+      <h2 style="font-size: 3em; text-align: center;">Nuestros valores</h2>
+-->  
       <div class="row">
         <div class="wrap">
 
           <div class="tarjeta-wrap">
-            <div class="tarjeta">
-              <div class="adelante card1">
+            <div class="tarjeta" style="background-image: url(../Imagenes/SobreCFit/MISION.png);">
+              <div class="adelante card1" style="background-color: rgba(0, 0, 0, 0.6);">
                 <div class="row justify-content-center" style="padding-top: 3em;">
-                  <h3 style="color: white; text-align: center;">MISIÓN</h3>
+                  <h3 style="color: white; text-align: center; margin-top: 3em;">MISIÓN</h3>
                 </div>
-                <div class="row justify-content-center" style="padding-top: 1.5em;" >
-                  <img src="../Imagenes/SobreCFit/target.png" style="width: 14em;" alt="">
-                </div>
+                
               </div>
-              <div class="atras">
+              <div class="atras"style="background-color: rgba(0, 0, 0, 0.6);">
                 <p style>
                   Dar solucion y mejora actividad física. Queremos lograr que esta sea fácil, cómoda y accesible a todas las personas. Ir a una tienda.
                 </p>
@@ -116,16 +114,14 @@
           </div>
 
           <div class="tarjeta-wrap">
-            <div class="tarjeta">
-              <div class="adelante card1">
+            <div class="tarjeta" style="background-image: url(../Imagenes/SobreCFit/VISION.png);">
+              <div class="adelante card1" style="background-color: rgba(0, 0, 0, 0.6);">
                 <div class="row justify-content-center" style="padding-top: 3em;">
-                  <h3 style="color: white; text-align: center;">VISIÓN</h3>
+                  <h3 style="color: white; text-align: center; margin-top: 3em;">VISIÓN</h3>
                 </div>
-                <div class="row justify-content-center" style="padding-top: 1.5em;" >
-                  <img src="../Imagenes/SobreCFit/eye.png" style="width: 14em;" alt="">
-                </div>
+
               </div>
-              <div class="atras">
+              <div class="atras" style="background-color: rgba(0, 0, 0, 0.6);">
                 <p style>
                   Dar solucion y mejora actividad física. Queremos lograr que esta sea fácil, cómoda y accesible a todas las personas. Ir a una tienda.
                 </p>
@@ -134,16 +130,14 @@
           </div>
           
           <div class="tarjeta-wrap">
-            <div class="tarjeta">
-              <div class="adelante card1">
+            <div class="tarjeta" style="background-image: url(../Imagenes/SobreCFit/OBJETIVO.png);">
+              <div class="adelante card1" style="background-color: rgba(0, 0, 0, 0.6);">
                 <div class="row justify-content-center" style="padding-top: 3em;">
-                  <h3 style="color: white; text-align: center;">OBJETIVO</h3>
+                  <h3 style="color: white; text-align: center; margin-top: 3em;">OBJETIVO</h3>
                 </div>
-                <div class="row justify-content-center" style="padding-top: 1.5em;" >
-                  <img src="../Imagenes/SobreCFit/bar-chart.png" style="width: 14em;" alt="">
-                </div>
+                
               </div>
-              <div class="atras">
+              <div class="atras" style="background-color: rgba(0, 0, 0, 0.6);">
                 <p style>
                   Dar solucion y mejora actividad física. Queremos lograr que esta sea fácil, cómoda y accesible a todas las personas. Ir a una tienda.
                 </p>
