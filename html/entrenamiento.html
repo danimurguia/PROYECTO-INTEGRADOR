@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+<!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +14,7 @@
   </head>
   <body>
 <!-- Barra de navegacion -->
-<header>
+<header class="sticky-top">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <img width="12%" type="button"   src="/Imagenes/logoCfit3.svg" alt="logoCfit" onclick= "window.location.href = ('/html/paginaPrincipal.html')">
@@ -69,25 +69,29 @@
       </div>
     </nav>
     </header>
-
-
-    <div class="card">
-      <h5 class="card-header">Conocelos</h5>
-      <div class="card-body">
-        <h5 class="card-title">Catalogo de Entrenadores</h5>
-        <p class="card-text">En cada una de las siguientes tarjetas se encuentran nuestros entrenadores que te ayudarán a complir tus objetivos físicos, identifica sus conocimientos y contacta a quien gustes</p>
+<!--Imagen principal-->
+<div>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="max-height: 650px;">
+        <img class="d-block w-100" src="../Imagenes/Entrenadores/entrenadores.png" alt="First slide">
+        <div class="carousel-caption d-none d-md-block row"
+          style="background-color: rgba(0, 0, 0, 0); border-radius: 15px;">
+          <h1 style="color: white; font-size: 4em; ">Conoce nuestros entrenadores</h1>
+        </div>
       </div>
     </div>
+  </div>
 
+<!-- Tarjetas de entrenadores -->
     <div class="wrap">
       <div class="tarjeta-wrap">
         <div class="tarjeta">
           <div class="adelante card1">
-            <img src="\Imagenes/Marlene.png" class="card-img-top" alt="...">
+            <!-- <img src="\Imagenes/Marlene.png" class="card-img-top" alt="..."> -->
             <h3>Marlene Rojas Flores</h3>
           </div>
           <div class="atras">
-            <h4>Marlene Rojas Flores</h4>
             <p>Licenciada en Cultura Física y Deportes. <br>
               Especializada en entrenamiento de gimnasio y entrenamiento funcional. <br>
               Certificado como entrenador deportivo.</p>
@@ -97,10 +101,10 @@
       <div class="tarjeta-wrap">
         <div class="tarjeta">
           <div class="adelante card2">
-            <img src="\Imagenes/Carlos.png" class="card-img-top" alt="...">
+            <!-- <img src="\Imagenes/Carlos.png" class="card-img-top" alt="..."> -->
+            <h3>Carlos Ortiz</h3>
           </div>
           <div class="atras">
-            <h3>Carlos Ortiz</h3>
             <p></p>Licenciado en Cultura Física y Deportes. <br>
             Especializado en entrenamiento de fútbol y entrenamiento funcional. <br>
             Certificado como entrenador de deportivo en SICCED.</p>
@@ -110,7 +114,7 @@
       </div>
     </div>
 
-
+<!-- Pie de página -->
     <footer class="text-center text-white" style="background-color: #f1f1f1;">
       <!-- Grid container -->
       <div class="container pt-4">
