@@ -6,23 +6,8 @@
 .contenedorCarrusel img{
   height: 650px;
 }
-.contenedorCarrusel{
-  margin-bottom: 0px;
-  background-color: transparent;
-  padding: 10px;
-}
-
-.entrenadores {
-  padding: 50px;  
-  margin-bottom: 20px;
-}
-.entrenadores img{
-  height: 300px;
-}
-
-.contenedorCategorias{
-  padding: 10px;
-  text-align: right;
+.bannerCarrusel img{
+  height: 230px;
 }
 
 .logoCodeFooter{
@@ -39,11 +24,14 @@
   right: 13%;
 }
 
-.contenedorCategorias img{
-  
-  height: 286px;
+
+/*Página principal body*/
+
+body{
+
 }
 
-.card-text{
-  text-align: left;
+.cajaPao{
+  -webkit-box-shadow: 6px 4px 13px -3px rgba(0,0,0,0.69); 
+box-shadow: 6px 4px 13px -3px rgba(0,0,0,0.69);
 }
