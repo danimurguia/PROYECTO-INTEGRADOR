@@ -36,7 +36,7 @@ let products = [];
     
                 //for display purposes only
                 console.warn('Producto Agregado al Local Storage' , {products} );
-                localStorage.setItem('myProducts', JSON.stringify(products) );
+                localStorage.setItem('Productos', JSON.stringify(products) );
                 Swal.fire(
                     'Producto Agregado!',
                     'Puedes agregar más productos',
@@ -56,9 +56,9 @@ let products = [];
 
         }
         
-        document.addEventListener('DOMContentLoaded', ()=>{
+        //document.addEventListener('DOMContentLoaded', ()=>{
         document.getElementById('btnSubmit').addEventListener('click', addProduct);
-    });
+    //});
         
        
            
