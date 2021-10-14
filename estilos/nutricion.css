@@ -1,7 +1,17 @@
+
+footer{
+	background-color: black;
+}
+footer img{
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
 .logoCodeFooter{
-  position: absolute;
+  position: relative;
   width: 11.5%;
-  right: 1%;
+  left: 38.5%;
  
 }
 .logoCodeFooter:hover{
