@@ -1,236 +1,239 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutrición | Consulta Fit</title>
+  <head>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="/estilos/nutricion.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-</head>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-<body>
+
+    <title>Nutrición</title>
+  </head>
+  <body>
 <!-- Barra de navegacion -->
 <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <img width="12%" type="button"   src="/Imagenes/logoCfit3.svg" alt="logoCfit" onclick= "window.location.href = ('/html/paginaPrincipal.html')">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Equipamiento
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="articulos.html">Artículos</a></li>
-                    <li><a class="dropdown-item" href="deportes.html">Deportes</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Consultoría
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="entrenamiento.html">Entrenamiento</a></li>
-                  <li><a class="dropdown-item" href="nutricion.html">Nutrición</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Ropa
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="ropaMujer.html">Mujer</a></li>
-                  <li><a class="dropdown-item" href="ropaHombre.html">Hombre</a></li>
-                </ul>
-              </li>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sobreNosotros.html">Sobre nosotros
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <img width="12%" type="button"   src="/Imagenes/logoCfit3.svg" alt="logoCfit" onclick= "window.location.href = ('/html/paginaPrincipal.html')">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Equipamiento
               </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="articulos.html">Artículos</a></li>
+                <li><a class="dropdown-item" href="deportes.html">Deportes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Consultoría
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="entrenamiento.html">Entrenamiento</a></li>
+                <li><a class="dropdown-item" href="nutricion.html">Nutrición</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ropa
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="ropaMujer.html">Mujer</a></li>
+                <li><a class="dropdown-item" href="ropaHombre.html">Hombre</a></li>
+              </ul>
             </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contactanos.html">Contáctanos
+            <a class="nav-link" href="sobreNosotros.html">Sobre nosotros
             </a>
           </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Buscar</button>
-            </form>
-          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactanos.html">Contáctanos
+          </a>
+        </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
         </div>
-      </nav>
-<img width="100%" src="/Imagenes/Nutrición/Consultoría nutricional.gif" alt="gif consultoría nutricional">
+      </div>
+    </nav>
+    </header>
+    <img width="100%" src="/Imagenes/Nutrición/Consultoría nutricional.gif" alt="gif consultoría nutricional">
+<br>
+<br>
 <!--Intro general-->
-<h1>Nutrición</h1>
-
+<h1>NUTRICIÓN</h1>
+<br>
 <h6>Estás a un clic de iniciar una vida más sana y saludable. 
-
+<br>
+<br>
   La situación mundial ha cambiado nuestras rutinas y estilo de vida, lo cual ha ocasionado que gran parte de la población descuide su alimentación y su salud por la vida sedentaria que estamos viviendo.
-  
+<br>
+<br>
   La comida rápida puede parecer una buena opción cuando no tenemos tiempo para analizar las consecuencias de consumirla frecuentemente. Hacer una despensa puede parecer tedioso cuando no se tiene idea de qué comprar. Una elección consciente de los alimentos es fundamental, no solo para aumentar masa muscular o para adelgazar; la alimentación saludable nos concierne a todos y es uno de los pilares de una buena forma física.
-  
+<br>
   Seguir dietas de internet es riesgoso, ya que muchas se basan en meras supersticiones o están hechas para un perfil específico. Cada persona necesita un plan nutricional individualizado para poder alcanzar sus objetivos específicos.
-  
+<br>
+<br>
   ¿Y si te digo que hay una mejor opción?
-  Nuestro nutriólogo en línea es una gran ayuda para todas las personas interesadas en mejorar su salud y calidad de vida. Ofrece verdaderas garantías de éxito para tu camino hacia la figura ideal. Ya quieras perder peso, aumentar masa muscular o quemar grasa: con la guía de nuestro experto, los planes personalizados y las herramientas que se te proporcionarán seguro que lo conseguirás.</h6>
-
+  Nuestro nutriólogo en línea es una gran ayuda para todas las personas interesadas en mejorar su salud y calidad de vida.</h6>
+<br>
 <!--Que es-->
 <h2>¿Qué es la consultoría nutricional en línea?</h2>
-<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, iste dolor soluta sequi ipsam voluptates rerum, sit blanditiis dolore unde porro labore perspiciatis! Nisi quia reiciendis eius alias recusandae sit!</h6>
-
-<h2>Conoce a nuestro nutriólogo</h2>
-<!-- Tarjetas nutriólogo -->
-<div class="wrap">
-  <div class="tarjeta-wrap">
-    <div class="tarjeta">
-      <div class="adelante card1">
-        <!-- <img src="\Imagenes/Marlene.png" class="card-img-top" alt="..."> -->
-        <h3>Marlene Rojas Flores</h3>
-      </div>
-      <div class="atras">
-        <p>Licenciada en Cultura Física y Deportes. <br>
-          Especializada en entrenamiento de gimnasio y entrenamiento funcional. <br>
-          Certificado como entrenador deportivo.</p>
-      </div>
-    </div>
-  </div>
-
+<h6>Es una gran opción para las personas a las que se les dificulta asistir a una cita presencial con un profesional de la nutrición. Ofrece verdaderas garantías de éxito para tu camino hacia la figura ideal. Ya quieras perder peso, aumentar masa muscular o quemar grasa: con la guía de nuestro experto, los planes personalizados y las herramientas que se te proporcionarán seguro que lo conseguirás.</h6>
+<br>
 <!--Nutriólogo en linea-->
 <h4>¿Por qué elegir un nutriólogo en línea?</h4>
-<h6>La falta de tiempo y nuestras ocupaciones diarias pueden dificultarnos la posibilidad de asistir con un profesional de la salud. Para tener una cita con nuestro profesional no necesitas ir a un consultorio. Lo único que necesitas es un dispositivo con acceso a internet, ya sea desde la comodidad de tu casa o al otro lado del mundo. ¡Que nada te impida cambiar tu calidad de vida!
-Nuestro objetivo es que tu plan nutricional sea sostenible en el tiempo de forma que no sólo consigas resultados, sino que los mantengas, y para ello el plan se ajusta cada dos semanas en base a tu progreso y retroalimentación.
+<h6>Nuestro objetivo es que tu plan nutricional sea sostenible en el tiempo de forma que no sólo consigas resultados, sino que los mantengas, y para ello el plan se ajusta cada dos semanas en base a tu progreso y retroalimentación.
+<br>
 No creemos en restricción sino en moderación, la comida es necesaria y todas las personas necesitamos disfrutar de la misma, ya que es uno de los mayores placeres de la vida y es parte fundamental de ella.</h6>
-
+<br>
 <h4>¿Cómo funciona la consultoría nutricional en linea?</h4>
-<ul>
-  <li>Planes alimenticios semanales</li>
-  <h6>Cada semana recibirás un plan con un recetario variado para que no te dé tiempo a aburrirte. Una guía detallada de 5 comidas diarias que te servirá para alcanzar lo que te propones.</h6>
-  <li>Seguimiento</li>
-  <h6>El profesional nutricional te propondrá un seguimiento del cumplimiento del plan semanal, peso y medidas. Si no obtienes los resultados anhelados modificamos tu plan. Así mismo, se dará seguimiento a tus logros.</h6>
-  <li>Profesional accesible 24/7</li>
-  <h6>Siempre tendrás un canal abierto de comunicación personalizada con nuestro especialista. Podrás resolver tus dudas y comentarle cómo evolucionas hacia los objetivos que han marcado juntos.</h6>
-</ul>
-
+<div class="listado">
+  <ul>
+    <li>Planes alimenticios semanales</li>
+    <h6>Cada semana recibirás un plan con un recetario variado para que no te dé tiempo a aburrirte. Una guía detallada de 5 comidas diarias que te servirá para alcanzar lo que te propones.</h6>
+    <li>Seguimiento</li>
+    <h6>El profesional nutricional te propondrá un seguimiento del cumplimiento del plan semanal, peso y medidas. Si no obtienes los resultados anhelados modificamos tu plan. Así mismo, se dará seguimiento a tus logros.</h6>
+    <li>Profesional accesible 24/7</li>
+    <h6>Siempre tendrás un canal abierto de comunicación personalizada con nuestro especialista. Podrás resolver tus dudas y comentarle cómo evolucionas hacia los objetivos que han marcado juntos.</h6>
+  </ul>
+</div>
+<br>
 
 <h4>¿Qué necesito para comenzar mi consulta nutricional en línea?</h4>
-<ul>
-  <li>Báscula corporal</li>
-  <h6>Preferiblemente digital para que los datos sean más exactos, no es necesario que sea muy sofisticada ni que determine porcentajes de grasa, aunque si es así, házmelo saber, podría ser útil, aunque no es indispensable.</h6>
-  <li>Cinta métrica</li>
-  <h6>Es básico que cuentes con ella para que realices ciertas mediciones periódicamente, esto con el fin de llevar un control en tu avance.</h6>
-  <li>Báscula de alimentos</li>
-  <h6>Ya sea digital o analógica. No es algo imprescindible, pero si es más sencillo llevar un control, al menos al principio.</h6>
-  <li>Cucharas y tazas medidoras</li>
-  <h6>Aunque la unidad de medida principal en tu plan de alimentación serán los gramos, también se puede planificar se te facilite más la medición si posees estos utensilios, por ello es necesario que cuentes con ellas para poder realizar tu plan correctamente.</h6>
-  <li>Disponibilidad para cocinar</li>
-  <h6>Ya sea que tú o alguien mas cocine tal y como se especifica en el plan alimenticio. Poder cocinarte a tí mismo es un plus, ya que podrás darte cuenta de la cantidad de alimentos que consumes y así empezar a alimentarte de una forma más conciente.</h6>
-  <li>Dispositivo con acceso a internet</li>
-  <h6>Estamos en constante contacto, y disponer de un dispositivo con acceso a internet facilitará la retroalimentación entre nosotros de un modo más ágil y rápido.</h6>
-  <li>Paciencia y dedicación</li>
-  <h6>No esperes resultados de la noche a la mañana. Tendrás que esforzarte día tras día con el fin de crear un hábito sano. Nuestro especialista tratará de facilitarte el proceso y darte cierta flexibilidad para aumentar la adherencia al plan, pero recuerda que no hay fórmulas mágicas.</h6>
-</ul>
-
+<div class="listado">
+  <ul>
+    <li>Báscula corporal</li>
+    <h6>Preferiblemente digital para que los datos sean más exactos, no es necesario que sea muy sofisticada ni que determine porcentajes de grasa, aunque si es así, házmelo saber, podría ser útil, aunque no es indispensable.</h6>
+    <li>Cinta métrica</li>
+    <h6>Es básico que cuentes con ella para que realices ciertas mediciones periódicamente, esto con el fin de llevar un control en tu avance.</h6>
+    <li>Báscula de alimentos</li>
+    <h6>Ya sea digital o analógica. No es algo imprescindible, pero si es más sencillo llevar un control, al menos al principio.</h6>
+    <li>Cucharas y tazas medidoras</li>
+    <h6>Aunque la unidad de medida principal en tu plan de alimentación serán los gramos, también se puede planificar se te facilite más la medición si posees estos utensilios, por ello es necesario que cuentes con ellas para poder realizar tu plan correctamente.</h6>
+    <li>Disponibilidad para cocinar</li>
+    <h6>Ya sea que tú o alguien mas cocine tal y como se especifica en el plan alimenticio. Poder cocinarte a tí mismo es un plus, ya que podrás darte cuenta de la cantidad de alimentos que consumes y así empezar a alimentarte de una forma más conciente.</h6>
+    <li>Dispositivo con acceso a internet</li>
+    <h6>Estamos en constante contacto, y disponer de un dispositivo con acceso a internet facilitará la retroalimentación entre nosotros de un modo más ágil y rápido.</h6>
+    <li>Paciencia y dedicación</li>
+    <h6>No esperes resultados de la noche a la mañana. Tendrás que esforzarte día tras día con el fin de crear un hábito sano. Nuestro especialista tratará de facilitarte el proceso y darte cierta flexibilidad para aumentar la adherencia al plan, pero recuerda que no hay fórmulas mágicas.</h6>
+  </ul>
+</div>
+<br>
 <h4>¿Qué necesita tu nutriólogo para dar seguimiento?</h4>
-<ul>
-  <li>Peso corporal</li>
-  <h6>El mismo plan no va a servirte indefinidamente, dependiendo de tus avances, será necesario realizar ciertos ajustes en él, es por lo que es de suma importancia que cada sábado mandes tu peso obtenido al levantarte, con la menor ropa posible.</h6>
-  <li>Medidas corporales</li>
-  <h6>Además del peso, cada dos semanas necesitaré algunas medidas corporales para determinar, junto con el peso, el estatus actual de tu composición corporal.</h6>
-  <li>Fotos de espalda y de frente</li>
-  <h6>Aunque no es indispensable en todos los casos, es muy recomendable tener registrado tu avance por medio de fotos, de esta manera detectar cosas que por medio del peso y las medidas no sería posible detectar.</h6>
-</ul>
-
-  <h5>¿Cuál es la dinámica en la modalidad síncrona?</h5>
+<div class="listado">
+  <ul>
+    <li>Peso corporal</li>
+    <h6>El mismo plan no va a servirte indefinidamente, dependiendo de tus avances, será necesario realizar ciertos ajustes en él, es por lo que es de suma importancia que cada sábado mandes tu peso obtenido al levantarte, con la menor ropa posible.</h6>
+    <li>Medidas corporales</li>
+    <h6>Además del peso, cada dos semanas necesitaré algunas medidas corporales para determinar, junto con el peso, el estatus actual de tu composición corporal.</h6>
+    <li>Fotos de espalda y de frente</li>
+    <h6>Aunque no es indispensable en todos los casos, es muy recomendable tener registrado tu avance por medio de fotos, de esta manera detectar cosas que por medio del peso y las medidas no sería posible detectar.</h6>
+  </ul>
+</div>
+<br>
+<h5>¿Cuál es la dinámica en la modalidad síncrona?</h5>
 <h6>Son sesiones de entrenamiento personalizado en línea por videollamada a través de Zoom en un horario personalizado, tu entrenador se adapta a tu disponibilidad</h6>
-<ul>
-  <li>Primera sesión síncrona con tu nutriólogo</li>
-  <h6>Es la sesión más importante, en ella el profesional conocerá tu condición física y juntos establecerán los objetivos para poder realizar la planificación del plan alimenticio.</h6>
-  <li>Planificación del menú quincenal</li>
-  <h6>El nutriólogo hará una planificación 100% personalizada para que consigas tus objetivos lo más rápido que sea posible</h6>
-  <li>Citas quincenales</li>
-  <h6>A lo largo del mes tú y tu entrenador realizarán sesiones de entrenamiento en directo, en las que este podrá guiarte, corregirte y motivarte para que le saques el máximo partido a las sesiones.</h6>
-  <li>Evaluación de tu progreso y actualización</li>
-  <h6>Al finalizar las dos semanas de tu plan alimenticio, haremos una evaluación de tu progreso para hacer los cambios que sean necesarios y seguir avanzando.</h6>
-</ul>
-
+<div class="listado">
+  <ul>
+    <li>Primera sesión síncrona con tu nutriólogo</li>
+    <h6>Es la sesión más importante, en ella el profesional conocerá tu condición física y juntos establecerán los objetivos para poder realizar la planificación del plan alimenticio.</h6>
+    <li>Planificación del menú quincenal</li>
+    <h6>El nutriólogo hará una planificación 100% personalizada para que consigas tus objetivos lo más rápido que sea posible</h6>
+    <li>Citas quincenales</li>
+    <h6>A lo largo del mes tú y tu entrenador realizarán sesiones de entrenamiento en directo, en las que este podrá guiarte, corregirte y motivarte para que le saques el máximo partido a las sesiones.</h6>
+    <li>Evaluación de tu progreso y actualización</li>
+    <h6>Al finalizar las dos semanas de tu plan alimenticio, haremos una evaluación de tu progreso para hacer los cambios que sean necesarios y seguir avanzando.</h6>
+  </ul>
+</div>
+<br>
 <h4>¿Qué incluyen los planes personalizados de alimentación?</h4>
 <h6>Contratando un plan de alimentación personalizado recibirás:</h6>
-<ul>
-  <li>Primera clase grupal online GRATIS</li>
-  <li>Acceso a nuestra plataforma premium creada exclusivamente para nuestros clientes. Ahí tendrás herramientas para controlar tu progreso, tu peso, todos tus planes alimenticios (que podrás descargar en PDF), etc. Podrás tenerlo todo organizado en un mismo lugar, además de motivarte y ver tu progreso constante.</li>
-  <li>Contacto directo con tu nutriólogo a través de un sistema de soporte que hemos implementado. Así, te proporcionaremos un acompañamiento continuo en tu proceso: nunca más estarás solo.</li>
-  <li>Un plan de alimentación que se adapte a tus posibilidades y objetivos.</li>
-  <li>Modificación de tu plan si es necesario (por ejemplo, en caso de que se te dificulte seguirlo).</li>
-  <li>Nos adaptamos a tus circunstancias y preferencias personales. Tendremos en cuenta cada detalle que nos digas, ya que se trata de un plan 100% personalizado y adaptado a cada cliente.</li>
-  <li>Sin permanencia. Podrás cancelar el servicio en cualquier momento.</li>
-</ul>
-
+<div class="listado">
+  <ul>
+    <li>Primera clase grupal online GRATIS</li>
+    <li>Acceso a nuestra plataforma premium creada exclusivamente para nuestros clientes. Ahí tendrás herramientas para controlar tu progreso, tu peso, todos tus planes alimenticios (que podrás descargar en PDF), etc. Podrás tenerlo todo organizado en un mismo lugar, además de motivarte y ver tu progreso constante.</li>
+    <li>Contacto directo con tu nutriólogo a través de un sistema de soporte que hemos implementado. Así, te proporcionaremos un acompañamiento continuo en tu proceso: nunca más estarás solo.</li>
+    <li>Un plan de alimentación que se adapte a tus posibilidades y objetivos.</li>
+    <li>Modificación de tu plan si es necesario (por ejemplo, en caso de que se te dificulte seguirlo).</li>
+    <li>Nos adaptamos a tus circunstancias y preferencias personales. Tendremos en cuenta cada detalle que nos digas, ya que se trata de un plan 100% personalizado y adaptado a cada cliente.</li>
+    <li>Sin permanencia. Podrás cancelar el servicio en cualquier momento.</li>
+  </ul>
+</div>
+<br>
 <!--FAQs-->
 <h2>FAQ's</h2>
 <h6>¿Aún tienes dudas sobre nuestras modalidades de entrenamiento? Te recomendamos leer nuestro FAQ (preguntas frecuentes) o enviarnos un email a través de nuestro formulario de contacto.</h6>
-<ul>
-  <li>Pregunta 1</li>
-  <h6>Respuesta 1</h6>
-  <li>Pregunta 2</li>
-  <h6>Respuesta 2</h6>
-  <li>Pregunta 3</li>
-  <h6>Respuesta 3</h6>
-  <li>Pregunta 4</li>
-  <h6>Respuesta 4</h6>
-</ul>
-
-<h6>Pero... ¿Es el entrenamiento personal online tan bueno como la experiencia cara a cara? ¿Vale la pena pagar por un plan que sigues a través de internet? Por supuesto que sí. Deja que los entrenadores hagan su trabajo y respondan sobre la marcha a todas tus preguntas sobre el entrenamiento personal online, y además, te sirvan de guía para encontrar el mejor programa para tus objetivos de fitness.</h6>
-
-</header>
-      <footer class="text-center text-white" style="background-color: #f1f1f1;">
-        <!-- Grid container -->
-        <div class="container pt-4">
-          <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Facebook -->
-            <a
-            type="button"
-            class="btn btn-link btn-floating btn-lg text-dark m-1"
-            onclick= "window.open('https://www.facebook.com/Consultafit')"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="bi bi-facebook"></i>
-          </a>
-            <!-- Instagram -->
-            <a
-            type="button"
-            class="btn btn-link btn-floating btn-lg text-dark m-1"
-            onclick= "window.open('https://www.instagram.com/consultaafit/')"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="bi bi-instagram"></i>
+<div class="listado">
+  <ul>
+    <li>Pregunta 1</li>
+    <h6>Respuesta 1</h6>
+    <li>Pregunta 2</li>
+    <h6>Respuesta 2</h6>
+    <li>Pregunta 3</li>
+    <h6>Respuesta 3</h6>
+  </ul>
+</div>
+<br>
+<!-- Pie de página -->
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+      type="button"
+      class="btn btn-link btn-floating btn-lg text-dark m-1"
+      onclick= "window.open('https://www.facebook.com/Consultafit')"
+      role="button"
+      data-mdb-ripple-color="dark"
+      ><i class="bi bi-facebook"></i>
+    </a>
+      <!-- Instagram -->
+      <a
+      type="button"
+      class="btn btn-link btn-floating btn-lg text-dark m-1"
+      onclick= "window.open('https://www.instagram.com/consultaafit/')"
+      role="button"
+      data-mdb-ripple-color="dark"
+      ><i class="bi bi-instagram"></i>
+        </a>
+                  <!-- Mail -->
+                  <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="/html/contactanos.html"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="bi bi-envelope-fill"></i>
               </a>
-                        <!-- Mail -->
-                        <a
-                        class="btn btn-link btn-floating btn-lg text-dark m-1"
-                    href="/html/contactanos.html"
-                    role="button"
-                    data-mdb-ripple-color="dark"
-                    ><i class="bi bi-envelope-fill"></i>
-                    </a>
-          </section>
-          <!-- Section: Social media -->
-        </div>
-        <!-- Grid container -->
-      
-        <!-- Copyright -->
-        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2021 Consulta Fit <span class = "headerLogoFooter">Desarrollado por</span>
-          <img type="button" class = "logoCodeFooter"  src="/Imagenes/logoNegroRectangulo1.svg" alt="logoCodeFooter" onclick= "window.open('/html/sobreDesarrolladores.html')">
-        </div>
-        <!-- Copyright -->
-      </footer>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Consulta Fit <span class = "headerLogoFooter">Desarrollado por</span>
+    <img type="button" class = "logoCodeFooter"  src="/Imagenes/logoNegroRectangulo1.svg" alt="logoCodeFooter" onclick= "window.open('/html/sobreDesarrolladores.html')">
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
