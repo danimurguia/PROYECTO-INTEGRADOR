@@ -14,6 +14,10 @@ body{
   background-attachment: fixed;
 }
 
+.caja__trasera-login{
+  color: black;
+}
+
 main{
   width: 100%;
   padding: 20px;
@@ -35,13 +39,12 @@ main{
   justify-content: center;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  background-color: rgba(199, 164, 48, 0.459);
+  background-color: rgba(255,255,255,.7);
 
 }
 
 .caja__trasera div{
   margin: 100px 40px;
-  color: white;
   transition: all 500ms;
 }
 
@@ -63,19 +66,20 @@ main{
 
 .caja__trasera button{
   padding: 10px 40px;
-  border: 2px solid #fff;
+  border: 2px solid rgba(219,90,66,255);
   font-size: 14px;
   background: transparent;
   font-weight: 600;
   cursor: pointer;
-  color: white;
+  background-color: rgba(219,90,66,255);
   outline: none;
   transition: all 300ms;
+  color: white;
 }
 
 .caja__trasera button:hover{
   background: #fff;
-  color: black;
+  color: rgba(219,90,66,255);
 }
 
 /*Formularios*/
@@ -105,7 +109,7 @@ main{
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
-  color: rgb(199, 164, 48);
+  color: rgb(19, 17, 13);
 }
 
 .contenedor__login-register form input{
@@ -123,7 +127,7 @@ main{
   margin-top: 40px;
   border: none;
   font-size: 14px;
-  background: rgb(199, 164, 48);
+  background-color: rgba(219,90,66,255);
   font-weight: 600;
   cursor: pointer;
   color: white;

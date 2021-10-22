@@ -18,14 +18,19 @@ function enviarCorreo(){
     Subject : "Mensaje de SporTech",
     Body : "Nombre: "+nombre+"<br>Correo: "+correo+"<br>Telefono: "+celular+"<br>Mensaje: "+mensaje
   }).then( (message) => {
-    let p;
-    if(message!="OK"){
-      p = document.getElementById('msgEmailError');
-      p.removeAttribute("hidden")   
+    if(message=="OK"){
+      Swal.fire(
+        '¡Mensaje enviado!',
+        'Nos contactaremos contigo',
+        'success'
+      ) 
     }else{
-      console.log(message)
-      p = document.getElementById('msgEmail');
-      p.removeAttribute("hidden") 
+      Swal.fire({
+        icon: 'error',
+        title: 'Error al enviar mensaje',
+        text: 'Vuelve a intentarlo',
+        
+      })
     }   
   })
 }
