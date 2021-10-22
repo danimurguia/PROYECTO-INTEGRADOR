@@ -1,7 +1,7 @@
-let input = document.getElementById('celular');
-input.oninvalid = function(event) {
-  event.target.setCustomValidity('Ingrese un numero de 10 dígitos');  
-}
+// let input = document.getElementById('celular');
+// input.oninvalid = function(event) {
+//   event.target.setCustomValidity('Ingrese un numero de 10 dígitos');  
+// }
 
 function enviarCorreo(){
   let nombre = document.getElementById("nombre").value;
@@ -15,7 +15,7 @@ function enviarCorreo(){
     From : correo,
     To : 'paolapedraza.3007@gmail.com',
     
-    Subject : "Mensaje de SporTech",
+    Subject : "Mensaje de ConsultaFit",
     Body : "Nombre: "+nombre+"<br>Correo: "+correo+"<br>Telefono: "+celular+"<br>Mensaje: "+mensaje
   }).then( (message) => {
     if(message=="OK"){
@@ -24,6 +24,7 @@ function enviarCorreo(){
         'Nos contactaremos contigo',
         'success'
       ) 
+      document.querySelector('.seccion-form').reset();
     }else{
       Swal.fire({
         icon: 'error',

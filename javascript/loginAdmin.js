@@ -27,7 +27,7 @@ let registros = [];
                 nombreRegistro: document.getElementById('nombreRegistro').value,
                 correoRegistro: document.getElementById('correoRegistro').value,
                 usuarioRegistro: document.getElementById('usuarioRegistro').value,
-                contraseñaRegistro: document.getElementById('contraseñaRegistro').value,
+                contraseñaRegistro: document.getElementById('contraseñaRegistro').value
                 
                    
             }
@@ -39,7 +39,7 @@ let registros = [];
             let contraseñaValido = expReg2.test(contraseñaRegistro.value)
             
             //saving to localStorage
-            if(nombreRegistro.value != "" && correoValido == true && usuarioRegistro.value != "" &&contraseñaValido == true) 
+            if(claveAcceso  == "admin2021" && nombreRegistro.value != "" && correoValido == true && usuarioRegistro.value != "" &&contraseñaValido == true) 
             {
                 
                 registros.push(registro);
@@ -153,9 +153,12 @@ anchoPage();
 
 function mostrarContrasena(){
     let tipo = document.getElementById("contraseñaRegistro");
-    if(tipo.type == "password"){
+    let tipo2 = document.getElementById("claveAcceso");
+    if(tipo.type == "password" || tipo.type == "password"){
         tipo.type = "text";
+        tipo2.type = "text";
     }else{
         tipo.type = "password";
+        tipo2.type = "password";
     }
 }
