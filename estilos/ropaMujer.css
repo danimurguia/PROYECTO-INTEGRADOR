@@ -26,9 +26,19 @@ padding: 10px;
   padding: 10px;
 }
 
+.loginAdmin{
+  position: absolute;
+ 
+  left: 5%;
+}
+.loginAdmin:hover{
+  opacity: 50%;
+}
+
 /* #Fotos{
   height: 150px;
 }
 #AñadirACarrito{
 float: right;
 } */
+

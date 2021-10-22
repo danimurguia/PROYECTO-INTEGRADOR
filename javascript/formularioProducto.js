@@ -7,6 +7,7 @@ let products = [];
         const addProduct = (ev)=>{
             ev.preventDefault();  //to stop the form submitting
             
+            
               
             let product = {
                 id: Date.now(),
@@ -15,11 +16,13 @@ let products = [];
                 marca: document.getElementById('marca').value,
                 descrip: document.getElementById('descrip').value,
                 color: document.getElementById('color').value,
-                talla: document.getElementById('talla').value,
-                archivo: document.getElementById('archivo').value
+                talla: document.querySelector('input[id="talla"]:checked')?.value,
+                archivo: document.getElementById('archivo').value,
+               
 
                 
 
+                
                 
             }
 
@@ -27,16 +30,16 @@ let products = [];
 
            
             
-            //saving to localStorage
+            //compare the input values to the values inside the if conditional
             if(nombre.value, precio.value,  marca.value, descrip.value, color.value, talla.value, archivo.value != "" ) 
             {
                 products.push(product);
-                //document.forms[0].reset(); 
+                //add the product to the array products
                 
     
                 //for display purposes only
                 console.warn('Producto Agregado al Local Storage' , {products} );
-                localStorage.setItem('Productos', JSON.stringify(products) );
+                localStorage.setItem('Productos', JSON.stringify(products) );  //saving to localStorage
                 Swal.fire(
                     'Producto Agregado!',
                     'Puedes agregar más productos',

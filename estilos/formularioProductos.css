@@ -75,3 +75,16 @@ font-weight: bold;
 .logoForm{
   margin-left: 15em;
 }
+
+.logoForm:hover{
+  opacity: 65%;
+}
+
+.loginAdmin{
+  position: absolute;
+ 
+  left: 5%;
+}
+.loginAdmin:hover{
+  opacity: 50%;
+}

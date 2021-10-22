@@ -27,7 +27,7 @@
                     Equipamiento
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="articulos.html">Artículos</a></li>
+                    <li><a class="dropdown-item" href="articulos.html">Funcional</a></li>
                     <li><a class="dropdown-item" href="deportes.html">Deportes</a></li>
                   </ul>
                 </li>
@@ -61,8 +61,7 @@
             </li>
               </ul>
               <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">Buscar</button>
+                <a class="btn btn-outline-light" type="submit" href="/html/inicioSesion.html">Iniciar Sesión | Registro</a>
               </form>
             </div>
           </div>
@@ -90,13 +89,13 @@
         
             <div class="mb-3">
               <label for="celular" class="form-label">Teléfono</label>
-              <input style = "height: 1.9em;" class="form-control formulario" type="text" placeholder="Ingresa tu celular" pattern="^\d{10}$" id="celular" maxlength="10" required>
+              <input style = "height: 1.9em;" class="form-control formulario" type="text" placeholder="Ingresa tu celular a 10 dígitos" pattern="^\d{10}$" id="celular" maxlength="10" required>
             </div>
         
             
             <div class="mb-3">
               <label for="mensaje" class="form-label">Mensaje</label>
-              <textarea class="form-control formulario" id="mensaje" rows="3"></textarea>
+              <textarea class="form-control formulario" id="mensaje" rows="3" placeholder="¡Escribe tus dudas, o si deseas saber más sobre nuestros planes, entrenadores o productos!" required></textarea>
             </div>
 
             <button id="botonEnviar" type="submit">Enviar</button>
@@ -151,7 +150,7 @@
       
         <!-- Copyright -->
         <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2021 Consulta Fit <span class = "headerLogoFooter">Desarrollado por</span>
+          © 2021 Consulta Fit<span onclick= "window.open('/html/loginAdmin.html')" type = "submit" class = "loginAdmin">Login Admin</span> <span class = "headerLogoFooter">Desarrollado por</span>
           <img type="button" class = "logoCodeFooter"  src="/Imagenes/logoNegroRectangulo1.svg" alt="logoCodeFooter" onclick= "window.open('/html/sobreDesarrolladores.html')">
         </div>
         <!-- Copyright -->
