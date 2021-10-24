@@ -1,33 +1,42 @@
+body{
+  background-image: url(/Imagenes/FormAgregarProducto/formProd.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main{
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 50px;
+}
+.seccion-form{
+  width: 30em;
+  background-color: rgba(255, 255, 255, 0.7);
+  
+  border-radius: 1em;
+  padding: 2em;
+  font-weight: bold;
+  margin-top: -2.5em;
+  }
+
+.contenedor__todo{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+/* Formulario de agregar producto */
+
 .alert {
   padding: 20px;
   background-color: #f44336;
   color: white;
 }
 
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.closebtn:hover {
-  color: black;
-}
-.container{
-  
-background-color: rgba(8, 3, 0, 0.1);
-border: 2px solid black;
-border-radius: 1em;
-padding: 1em;
-font-weight: bold;
-
- 
-}
 .titulo{
   text-align: center;
 }
