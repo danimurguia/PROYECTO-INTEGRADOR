@@ -14,6 +14,10 @@ body{
   background-attachment: fixed;
 }
 
+.sticky-top{
+  position: sticky;
+  top: 0;
+}
 .caja__trasera-login{
   color: black;
 }
@@ -208,3 +212,4 @@ footer img{
 .loginAdmin:hover{
   opacity: 50%;
 }
+

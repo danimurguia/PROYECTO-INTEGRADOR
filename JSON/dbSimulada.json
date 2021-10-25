@@ -1,0 +1,91 @@
+[{
+"archivo": "/Imagenes/imagenesJSON/playeraVerde.jpg",
+"categoria": "Accesorios",
+"color": "Multicolor",
+"descrip": "Paquete de 25 aros deportivos de distintos colores",
+"id": 0,
+"marca": "BlueDot",
+"nombre": "Paquete de 25 Aros Deportivos",
+"precio": "$799",     
+"talla": "N/A"
+},
+{
+  "archivo": "/Imagenes/imagenesJSON/playeraVerde.jpg",
+  "categoria": "Accesorios",
+  "color": "Verde",
+  "descrip": "Paquete de 10 aros deportivos de distintos colores",
+  "id": 1,
+  "marca": "BlueDot",
+  "nombre": "Paquete 10 de Aros Deportivos",
+  "precio": "$399",     
+  "talla": "N/A"
+  },
+  {
+    "archivo": "/Imagenes/imagenesJSON/playeraVerde.jpg",
+    "categoria": "Accesorios",
+    "color": "Amarillo",
+    "descrip": "Paquete de 50 aros deportivos de distintos colores",
+    "id": 2,
+    "marca": "BlueDot",
+    "nombre": "Paquete 50 de Aros Deportivos",
+    "precio": "$1,099",     
+    "talla": "N/A"
+    },
+    {
+      "archivo": "/Imagenes/imagenesJSON/playeraVerde.jpg",
+      "categoria": "Accesorios",
+      "color": "Multicolor",
+      "descrip": "Paquete de 25 conos deportivos de distintos colores",
+      "id": 3,
+      "marca": "BlueDot",
+      "nombre": "Paquete 25 de Conos Deportivos",
+      "precio": "$1,299",     
+      "talla": "N/A"
+      },
+      {
+        "archivo": "/Imagenes/imagenesJSON/playeraVerde.jpg",
+        "categoria": "Accesorios",
+        "color": "Multicolor",
+        "descrip": "Paquete de 15 conos deportivos de distintos colores",
+        "id": 4,
+        "marca": "BlueDot",
+        "nombre": "Paquete 15 de Conos Deportivos",
+        "precio": "$799",     
+        "talla": "N/A"
+        },
+
+{
+  "archivo": "/Imagenes/imagenesJSON/playeraVerde.jpg",
+  "categoria": "Accesorios",
+  "color": "Multicolor",
+  "descrip": "Paquete de 50 conos deportivos de distintos colores",
+  "id": 5,
+  "marca": "BlueDot",
+  "nombre": "Paquete 50 de Conos Deportivos",
+  "precio": "$2,199",     
+  "talla": "N/A"
+  },
+  {
+    "archivo": "/Imagenes/imagenesJSON/playeraVerde.jpg",
+    "categoria": "Deportes",
+    "color": "Multicolor",
+    "descrip": "Paquete de 25 aros deportivos de distintos colores",
+    "id": 6,
+    "marca": "BlueDot",
+    "nombre": "Paquete 25 de Aros Deportivos",
+    "precio": "$799",     
+    "talla": "N/A"
+    },
+    {
+      "archivo": "/Imagenes/imagenesJSON/playeraVerde.jpg",
+      "categoria": "Deportes",
+      "color": "Verde",
+      "descrip": "Paquete de 100 conos deportivos de distintos colores",
+      "id": 7,
+      "marca": "BlueDot",
+      "nombre": "Paquete 100 de Conos Deportivos",
+      "precio": "$2,999",     
+      "talla": "N/A"
+      }
+      
+]

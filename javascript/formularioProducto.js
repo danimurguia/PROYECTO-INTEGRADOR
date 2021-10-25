@@ -17,6 +17,7 @@ let products = [];
                 descrip: document.getElementById('descrip').value,
                 color: document.getElementById('color').value,
                 talla: document.querySelector('input[id="talla"]:checked')?.value,
+                categoria: document.querySelector('input[id="categoria"]:checked')?.value,
                 archivo: document.getElementById('archivo').value,
                
 
@@ -31,7 +32,7 @@ let products = [];
            
             
             //compare the input values to the values inside the if conditional
-            if(nombre.value, precio.value,  marca.value, descrip.value, color.value, talla.value, archivo.value != "" ) 
+            if(nombre.value, precio.value,  marca.value, descrip.value, color.value, talla.value, categoria.value, archivo.value != "" ) 
             {
                 products.push(product);
                 //add the product to the array products
@@ -59,13 +60,11 @@ let products = [];
 
         }
         
-        //document.addEventListener('DOMContentLoaded', ()=>{
+        document.addEventListener('DOMContentLoaded', ()=>{
         document.getElementById('btnSubmit').addEventListener('click', addProduct);
-    //});
-        
-       
+    });
+   
            
              
 
-        
-
+    
