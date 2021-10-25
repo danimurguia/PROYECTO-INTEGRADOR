@@ -8,11 +8,11 @@
     <link rel="shortcut icon" href="/Imagenes/ConsultaFit.ico">
     <link rel="stylesheet" href="/estilos/paginaPrincipal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  </head>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<link rel="stylesheet" href="/estilos/articulos.css">
+<body>
 <!-- Barra de navegacion -->
 <header class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -29,7 +29,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="articulos.html">Accesorios</a></li>
-                <li><a class="dropdown-item" href="deportes.html">Especializados</a></li>
+                  <li><a class="dropdown-item" href="deportes.html">Especializados</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -82,10 +82,10 @@
   </div>
 </div> -->
 <div class="contenedorBanner" style="height: 100px mar 10px;">
-  <img src="/Imagenes/Artículos/bannerFuncional.png" alt="" style="width: 100%; height: 200px; padding: 10px;">
+  <img src="/Imagenes/Artículos/Banner ACCESORIOS.png" alt="" style="width: 100%; height: 200px; padding: 10px;">
 </div>
 <!-- checkbox -->
-<div class="contenedorTarjetitas">
+<!-- <div class="contenedorTarjetitas">
   <div class="container">
     <div class="row" style="margin-top: 10px;">
       <div class="col-sm-3">
@@ -249,112 +249,24 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
 
 <!-- Tarjetas de producto -->
+<div class = "row" id ="cards"  style =  "width: 100%"  ></div>
+<template id="template-card-accesorios">
+  <div class="col-12 mb-2 col-md-4" style="margin-bottom: 10px;" >
+    <div style = "margin-left: 50px" class="card"style="max-width: 240px;">
+      <img style="width:auto;" class = "card-img-top" src="" alt=""> 
+      <div  class="card-body">
+        <h5>Titulo</h5>
+        <p>precio</p>
+        <p class ="p2">marca</p>
+        <button class="btn btn-dark">Comprar</button>
       </div>
-      <div class="col-sm-9">
-        <div class="container">
-          <div class="row row-cols-3">
-            <div class="col" style="margin-bottom: 10px;">
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img id= "Fotos" src="/Imagenes/RopaMujer/Malla negra mujer.png" style="width: 15em;" alt="...">
-                  </div>
-                  <figcaption class="info-wrap">
-                    <a href="#" class="title">Legging adidas AEROREADY</a>
-                    <div class="mt-2">
-                      <var class="price">$1,200.00</var> <!-- price-wrap.// -->
-                      <a href="#" class="btn btn-sm btn-outline-primary float-right" style= "float: right">Añadir al carrito <i class="fa fa-shopping-cart"></i></a>
-                    </div> <!-- action-wrap.end -->
-                  </figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="col" style="margin-bottom: 10px;">
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="/Imagenes/RopaMujer/playera puma mujer.png" style="width: 15em;"  alt="...">
-                  </div>
-                  <figcaption class="info-wrap">
-      <a href="#" class="title">Playera Puma Moto</a>
-      <div class="mt-2">
-        <var class="price">$600.00</var> <!-- price-wrap.// -->
-        <a href="#" class="btn btn-sm btn-outline-primary float-right" style= "float: right">Añadir al carrito<i class="fa fa-shopping-cart"></i></a>
-      </div> <!-- action-wrap.end -->
-    </figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="col" style="margin-bottom: 10px;">
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="/Imagenes/RopaMujer/playera1.png" style="width: 15em;" alt="...">
-                  </div>
-                  <figcaption class="info-wrap">
-                    <a href="#" class="title">Sudadera Nike Element</a>
-                    <div class="mt-2">
-                      <var class="price">$1,000.00</var> <!-- price-wrap.// -->
-                      <a href="#" class="btn btn-sm btn-outline-primary float-right" style= "float: right">Añadir al carrito<i class="fa fa-shopping-cart"></i></a>
-                    </div> <!-- action-wrap.end -->
-                  </figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="col" style="margin-bottom: 10px;">
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="/Imagenes/RopaMujer/playera2.png" style="width: 15em;"alt="...">
-                  </div>
-                  <figcaption class="info-wrap">
-                    <a href="#" class="title">Playera adidas Own the Run</a>
-                    <div class="mt-2">
-                      <var class="price">$408.00</var> <!-- price-wrap.// -->
-                      <a href="#" class="btn btn-sm btn-outline-primary float-right" style= "float: right">Añadir al carrito<i class="fa fa-shopping-cart"></i></a>
-                    </div> <!-- action-wrap.end -->
-                  </figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="col" style="margin-bottom: 10px;">
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="/Imagenes/RopaMujer/leggins2.png" style="width: 15em;" alt="...">
-                  </div>
-                  <figcaption class="info-wrap">
-                    <a href="#" class="title">Mallas Puma Run Graphic</a>
-                    <div class="mt-2">
-                      <var class="price">$849.00</var> <!-- price-wrap.// -->
-                      <a href="#" class="btn btn-sm btn-outline-primary float-right"style= "float: right">Añadir al carrito<i class="fa fa-shopping-cart"></i></a>
-                    </div> <!-- action-wrap.end -->
-                  </figcaption>
-                </div>
-              </div>
-            </div>
-            <div class="col" style="margin-bottom: 10px;">
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="/Imagenes/RopaMujer/shortpng.png" style="width: 15em;"alt="...">
-                  </div>
-                  <figcaption class="info-wrap">
-                    <a href="#" class="title">Short Nike 2 en 1</a>
-                    <div class="mt-2">
-                      <var class="price">$700.00</var> <!-- price-wrap.// -->
-                      <a href="#AñadirACarrito" class="btn btn-sm btn-outline-primary float-right" style= "float: right" >Añadir al carrito<i class="fa fa-shopping-cart"></i></a>
-                    </div> <!-- action-wrap.end -->
-                  </figcaption>
-                </div>
-              </div>
-              
-          </div>
-        </div>
+    </div>
+  </div>
+</template>
         <div id="contenedorPagination">
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
@@ -411,6 +323,7 @@
   </div>
   <!-- Copyright -->
 </footer>
+<script src="/javascript/articulosCargar.js"></script>
 </body>
 
 </html>
