@@ -7,7 +7,8 @@
 "marca": "BlueDot",
 "nombre": "Paquete de 25 Aros Deportivos",
 "precio": "$799",     
-"talla": "N/A"
+"talla": "N/A",
+"cantidad": "50"
 },
 {
   "archivo": "/Imagenes/imagenesJSON/playeraVerde.jpg",
@@ -18,7 +19,8 @@
   "marca": "BlueDot",
   "nombre": "Paquete 10 de Aros Deportivos",
   "precio": "$399",     
-  "talla": "N/A"
+  "talla": "N/A",
+  "cantidad": "50"
   },
   {
     "archivo": "/Imagenes/imagenesJSON/playeraVerde.jpg",
@@ -29,7 +31,8 @@
     "marca": "BlueDot",
     "nombre": "Paquete 50 de Aros Deportivos",
     "precio": "$1,099",     
-    "talla": "N/A"
+    "talla": "N/A",
+    "cantidad": "50"
     },
     {
       "archivo": "/Imagenes/imagenesJSON/playeraVerde.jpg",
@@ -40,7 +43,8 @@
       "marca": "BlueDot",
       "nombre": "Paquete 25 de Conos Deportivos",
       "precio": "$1,299",     
-      "talla": "N/A"
+      "talla": "N/A",
+      "cantidad": "50"
       },
       {
         "archivo": "/Imagenes/imagenesJSON/playeraVerde.jpg",
@@ -51,7 +55,8 @@
         "marca": "BlueDot",
         "nombre": "Paquete 15 de Conos Deportivos",
         "precio": "$799",     
-        "talla": "N/A"
+        "talla": "N/A",
+        "cantidad": "50"
         },
 
 {
@@ -63,7 +68,8 @@
   "marca": "BlueDot",
   "nombre": "Paquete 50 de Conos Deportivos",
   "precio": "$2,199",     
-  "talla": "N/A"
+  "talla": "N/A",
+  "cantidad": "50"
   },
   {
     "archivo": "/Imagenes/imagenesJSON/playeraVerde.jpg",
@@ -74,7 +80,8 @@
     "marca": "BlueDot",
     "nombre": "Paquete 25 de Aros Deportivos",
     "precio": "$799",     
-    "talla": "N/A"
+    "talla": "N/A",
+    "cantidad": "50"
     },
     {
       "archivo": "/Imagenes/imagenesJSON/playeraVerde.jpg",
@@ -85,7 +92,8 @@
       "marca": "BlueDot",
       "nombre": "Paquete 100 de Conos Deportivos",
       "precio": "$2,999",     
-      "talla": "N/A"
+      "talla": "N/A",
+      "cantidad": "50"
       }
       
 ]
