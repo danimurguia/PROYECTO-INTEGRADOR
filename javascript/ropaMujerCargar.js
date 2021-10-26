@@ -1,5 +1,5 @@
 const cards = document.getElementById('cards');
-const templateCard = document.getElementById('template-card-deportes').content
+const templateCard = document.getElementById('template-card-ropamujer').content
 const fragment = document.createDocumentFragment()
 
 document.addEventListener('DOMContentLoaded', () => {fetchData()
@@ -19,9 +19,9 @@ const fetchData = async () => {
 
 const pintarCards = data => {
     data.forEach(producto => {
-        if(producto.categoria == "Deportes"){
+        if(producto.categoria == "Ropamujer"){
         templateCard.querySelector('h5').textContent = producto.nombre
-        templateCard.querySelector('p').textContent = "$" + producto.precio
+        templateCard.querySelector('p').textContent =  "$" + producto.precio
         templateCard.querySelector('.p2').textContent = producto.marca
         templateCard.querySelector('img').setAttribute("src", producto.archivo)
         templateCard.querySelector('.btn-dark').dataset.id = producto.id

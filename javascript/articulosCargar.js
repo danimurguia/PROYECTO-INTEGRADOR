@@ -21,7 +21,7 @@ const pintarCards = data => {
     data.forEach(producto => {
         if(producto.categoria == "Accesorios"){
         templateCard.querySelector('h5').textContent = producto.nombre
-        templateCard.querySelector('p').textContent = producto.precio
+        templateCard.querySelector('p').textContent = "$" + producto.precio
         templateCard.querySelector('.p2').textContent = producto.marca
         templateCard.querySelector('img').setAttribute("src", producto.archivo)
         templateCard.querySelector('.btn-dark').dataset.id = producto.id

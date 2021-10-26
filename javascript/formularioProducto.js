@@ -11,13 +11,13 @@ let products = [];
               
             let product = {
                 id: Date.now(),
+                categoria: document.querySelector('input[id="categoria"]:checked')?.value,
                 nombre: document.getElementById('nombre').value,
                 precio: document.getElementById('precio').value,
                 marca: document.getElementById('marca').value,
                 descrip: document.getElementById('descrip').value,
                 color: document.getElementById('color').value,
                 talla: document.querySelector('input[id="talla"]:checked')?.value,
-                categoria: document.querySelector('input[id="categoria"]:checked')?.value,
                 archivo: document.getElementById('archivo').value,
                
 

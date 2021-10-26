@@ -6,7 +6,7 @@
 "id": 0,
 "marca": "BlueDot",
 "nombre": "Paquete de 10 Conos Azules",
-"precio": "$199",     
+"precio": "199",     
 "talla": "N/A",
 "cantidad": "50"
 },
@@ -18,7 +18,7 @@
   "id": 1,
   "marca": "BlueDot",
   "nombre": "Paquete de 15 de Conos Naranjas",
-  "precio": "$249",     
+  "precio": "249",     
   "talla": "N/A",
   "cantidad": "50"
   },
@@ -30,7 +30,7 @@
     "id": 2,
     "marca": "BlueDot",
     "nombre": "Paquete de 10 de Conos Rojos",
-    "precio": "$199",     
+    "precio": "199",     
     "talla": "N/A",
     "cantidad": "50"
     },
@@ -42,7 +42,7 @@
       "id": 3,
       "marca": "BlueDot",
       "nombre": "Paquete de 25 de Conos Multicolor",
-      "precio": "$399",     
+      "precio": "399",     
       "talla": "N/A",
       "cantidad": "50"
       },
@@ -54,7 +54,7 @@
         "id": 4,
         "marca": "BlueDot",
         "nombre": "Paquete de 50 Conos Multicolor",
-        "precio": "$699",     
+        "precio": "699",     
         "talla": "N/A",
         "cantidad": "50"
         },
@@ -67,57 +67,10 @@
   "id": 5,
   "marca": "BlueDot",
   "nombre": "Paquete de 10 Platos Deportivos Multicolor",
-  "precio": "$2,199",     
+  "precio": "2199",     
   "talla": "N/A",
   "cantidad": "50"
-  },
-  {
-    "archivo": "/Imagenes/imagenesJSON/platoMulti15.jpg",
-    "categoria": "Accesorios",
-    "color": "Multicolor",
-    "descrip": "Paquete de 15 platos deportivos, multicolor",
-    "id": 6,
-    "marca": "BlueDot",
-    "nombre": "Paquete de 15 Platos Deportivos Multicolor",
-    "precio": "$299",     
-    "talla": "N/A",
-    "cantidad": "50"
-    },
-    {
-      "archivo": "/Imagenes/imagenesJSON/platoMulti25.jpg",
-      "categoria": "Accesorios",
-      "color": "Multicolor",
-      "descrip": "Paquete de 25 platos deportivos de distintos colores",
-      "id": 7,
-      "marca": "BlueDot",
-      "nombre": "Paquete de 25 platos Deportivos",
-      "precio": "$449",     
-      "talla": "N/A",
-      "cantidad": "50"
-      },
-      {
-        "archivo": "/Imagenes/imagenesJSON/platoMulti50.jpg",
-        "categoria": "Accesorios",
-        "color": "Multicolor",
-        "descrip": "Paquete de 50 platos deportivos de distintos colores",
-        "id": 7,
-        "marca": "BlueDot",
-        "nombre": "Paquete 50 de Conos Deportivos Multicolor",
-        "precio": "$799",     
-        "talla": "N/A",
-        "cantidad": "50"
-        },
-        {
-          "archivo": "/Imagenes/imagenesJSON/platoNaranja10.jpg",
-          "categoria": "Accesorios",
-          "color": "Multicolor",
-          "descrip": "Paquete de 10 platos deportivos de color naranja",
-          "id": 7,
-          "marca": "BlueDot",
-          "nombre": "Paquete 10 de Conos Deportivos Naranja",
-          "precio": "$799",     
-          "talla": "N/A",
-          "cantidad": "50"
-          }
+  }
+ 
       
 ]
