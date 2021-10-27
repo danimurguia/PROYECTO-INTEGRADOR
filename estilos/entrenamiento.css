@@ -9,6 +9,9 @@ h2{
 	margin-left: 40px;
 	margin-right: 30px;
 	text-align: center;
+	background-color: red;
+	opacity: 0.75;
+	color: white;
 }
 
 h3{
@@ -21,6 +24,7 @@ h4{
   font-size: 30px;
 	margin-left: 40px;
 	margin-right: 50px;
+	text-align: justify;
 }
 
 h5{
@@ -33,6 +37,7 @@ h6{
 	font-size: 25px;
 	margin-left: 40px;
 	margin-right: 40px;
+	text-align: justify;
 }
 
 .listado{
@@ -125,7 +130,7 @@ body{
 
 	text-align: center;
 	color: #fff;
-	font-family: "open sans";
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
   background: rgb(51, 48, 48);
 }
 
