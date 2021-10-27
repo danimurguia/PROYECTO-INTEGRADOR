@@ -26,8 +26,9 @@ let registros = [];
                 id: Date.now(),
                 nombreRegistro: document.getElementById('nombreRegistro').value,
                 correoRegistro: document.getElementById('correoRegistro').value,
-                usuarioRegistro: document.getElementById('usuarioRegistro').value,
-                contraseñaRegistro: document.getElementById('contraseñaRegistro').value
+                contraseñaRegistro: document.getElementById('contraseñaRegistro').value,
+                contraseñaRegistro2: document.getElementById('contraseñaRegistro2').value,
+                claveAcceso: document.getElementById('claveAcceso').value
                 
                    
             }
@@ -39,7 +40,7 @@ let registros = [];
             let contraseñaValido = expReg2.test(contraseñaRegistro.value)
             
             //saving to localStorage
-            if(claveAcceso  == "admin2021" && nombreRegistro.value != "" && correoValido == true && usuarioRegistro.value != "" &&contraseñaValido == true) 
+            if(claveAcceso.value  == "admin2021" && nombreRegistro.value != "" && correoValido == true &&contraseñaValido == true && contraseñaRegistro.value == contraseñaRegistro2.value) 
             {
                 
                 registros.push(registro);
@@ -56,7 +57,16 @@ let registros = [];
                   )
                 document.querySelector('.formulario__register').reset();// to clear the form for the next entries
             
-                } else if ( correoValido == false ) {
+                } else if ( claveAcceso.value != 'admin2021' ) {
+               
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text:  'Clave de accseso de administrador incorrecta' 
+                       
+                      })
+                      document.getElementById('claveAcceso').value = ''// to clear the input for the next
+                }else if ( correoValido == false ) {
                
                 Swal.fire({
                     icon: 'error',
@@ -74,6 +84,15 @@ let registros = [];
                    
                   })
                   document.getElementById('contraseñaRegistro').value = ''// to clear the form for the next
+            }else if (  contraseñaRegistro.value != contraseñaRegistro2.value) {
+               
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text:  'Las contraseñas no coinciden' 
+                   
+                  })
+                  document.getElementById('contraseñaRegistro2').value = ''// to clear the form for the next
             }
             
             else {
@@ -154,11 +173,15 @@ anchoPage();
 function mostrarContrasena(){
     let tipo = document.getElementById("contraseñaRegistro");
     let tipo2 = document.getElementById("claveAcceso");
-    if(tipo.type == "password" || tipo.type == "password"){
+    let tipo3 = document.getElementById("contraseñaRegistro2");
+    if(tipo.type == "password"){
         tipo.type = "text";
         tipo2.type = "text";
+        tipo3.type = "text";
+        
     }else{
         tipo.type = "password";
         tipo2.type = "password";
+        tipo3.type = "password";
     }
 }

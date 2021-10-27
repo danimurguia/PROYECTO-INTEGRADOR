@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {fetchData()
 // Traer productos
 const fetchData = async () => {
     try {
-    const res = await fetch('/JSON/dbSimulada.json')
+    const res = await fetch('http://localhost:8080/productos')
     const data = await res.json()
     //console.log(data)
     pintarCards(data)

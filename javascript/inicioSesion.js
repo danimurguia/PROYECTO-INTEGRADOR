@@ -5,6 +5,7 @@ window.addEventListener("resize", anchoPage);
 document.getElementById("btnMostrarContra").addEventListener("click", mostrarContrasena);
 
 
+
 //Declarando variables
 var formulario_login = document.querySelector(".formulario__login");
 var formulario_register = document.querySelector(".formulario__register");
@@ -26,8 +27,8 @@ let registros = [];
                 id: Date.now(),
                 nombreRegistro: document.getElementById('nombreRegistro').value,
                 correoRegistro: document.getElementById('correoRegistro').value,
-                usuarioRegistro: document.getElementById('usuarioRegistro').value,
                 contraseñaRegistro: document.getElementById('contraseñaRegistro').value,
+                contraseñaRegistro2: document.getElementById('contraseñaRegistro2').value
                 
                    
             }
@@ -39,7 +40,7 @@ let registros = [];
             let contraseñaValido = expReg2.test(contraseñaRegistro.value)
             
             //saving to localStorage
-            if(nombreRegistro.value != "" && correoValido == true && usuarioRegistro.value != "" &&contraseñaValido == true) 
+            if(nombreRegistro.value != "" && correoValido == true  &&contraseñaValido == true && contraseñaRegistro.value == contraseñaRegistro2.value) 
             {
                 
                 registros.push(registro);
@@ -74,6 +75,15 @@ let registros = [];
                    
                   })
                   document.getElementById('contraseñaRegistro').value = ''// to clear the form for the next
+            } else if (  contraseñaRegistro.value != contraseñaRegistro2.value) {
+               
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text:  'Las contraseñas no coinciden' 
+                   
+                  })
+                  document.getElementById('contraseñaRegistro2').value = ''// to clear the form for the next
             }
             
             else {
@@ -90,9 +100,9 @@ let registros = [];
 
         
         
-        //document.addEventListener('DOMContentLoaded', ()=>{
+        document.addEventListener('DOMContentLoaded', ()=>{
         document.getElementById("btnRegistro").addEventListener("click", addRegistro)
-        //;});
+        ;});
         
         
 
@@ -153,9 +163,12 @@ anchoPage();
 
 function mostrarContrasena(){
     let tipo = document.getElementById("contraseñaRegistro");
+    let tipo2 = document.getElementById("contraseñaRegistro2");
     if(tipo.type == "password"){
         tipo.type = "text";
+        tipo2.type = "text";
     }else{
         tipo.type = "password";
+        tipo2.type = "password";
     }
 }
