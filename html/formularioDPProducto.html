@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../estilos/formularioProductos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.
+  css">
+  <link rel="stylesheet" href="sweetalert2.min.css">
+  <title>Cambiar-Borrar producto</title>
+  <link rel="shortcut icon" href="/Imagenes/ConsultaFit.ico">
+</head>
+
+<body>
+
+  <!-- Formulario Productos -->
+  <div class="container" style="width: 60%;">
+    <div class="row">
+      <div class="col-12">
+      </div>
+    </div>
+    <div class="container" style="padding: 3em;">
+      <div class="row" style="padding-top: 1.0em;">
+        <div class="col-12">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="row justify-content-center">
+            <form name="formularioProducto"  class="seccion-form" action="">
+              <div class="mb-2">
+                <h3 class="titulo">Modificar / Borrar producto / Administrador</h3>
+                <div class="mb-2">
+                  <label for="name" class="form-label">Nombre del producto</label>
+                  <input style="height: 1.7em" type="text" value="" class="form-control formulario " id="nombreSearch"
+                    placeholder="Ingresa el nombre del producto, exactamente como aparece en su DB">
+                  <button class="button" type="submit" id="btnSearch"><span> Buscar producto</span></button>
+                </div>
+                <div class="mb-2">
+                  <label for="color" class="form-label">Categoría</label> <br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="categoria" id="categoria" value="Accesorios"
+                      checked>
+                    <label class="form-check-label" for="inlineRadio2">Accesorios</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="categoria" id="categoria" value="Deportes">
+                    <label class="form-check-label" for="inlineRadio2">Deportes</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="categoria" id="categoria" value="Ropamujer">
+                    <label class="form-check-label" for="inlineRadio2">Ropa Mujer</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="categoria" id="categoria" value="Ropahombre">
+                    <label class="form-check-label" for="inlineRadio2">Ropa Hombre</label>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="categoria" id="categoria" value="Masvendidos">
+                      <label class="form-check-label" for="inlineRadio2">Más vendidos</label>
+                    </div>
+                  </div>
+                  <br><br>
+                  <label for="nombre" class="form-label">Nombre del producto</label>
+                  <input style="height: 1.7em" type="text" value="" class="form-control formulario " id="nombre"
+                    placeholder="Ingresa el nombre del producto">
+                </div>
+
+                <div class="mb-2">
+                  <label for="precio" class="form-label">Precio</label>
+                  <input style="height: 1.7em" id="precio" type="number" value="" class="form-control formulario"
+                    placeholder="Ejemplo: 1,999">
+                </div>
+
+                <div class="mb-2">
+                  <label for="marca" class="form-label">Marca</label>
+                  <input style="height: 1.7em" class="form-control formulario" type="text" value=""
+                    placeholder="Ingresa la marca del producto" id="marca">
+                </div>
+
+
+                <div class="mb-2">
+                  <label for="descrip" class="form-label">Descripción</label>
+                  <input style="height: 1.7em" class="form-control formulario" type="text" value=""
+                    placeholder="Describe brevemente el producto" id="descrip">
+                </div>
+
+                <div class="mb-2">
+                  <label for="color" class="form-label">Color</label>
+                  <input style="height: 1.7em" class="form-control formulario" type="text" value=""
+                    placeholder="Define el color del producto" id="color">
+                </div>
+                <div class="mb-2">
+                  <label for="color" class="form-label">Talla</label> <br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="talla" id="talla" value="CH" checked>
+                    <label class="form-check-label" for="inlineRadio2">CH</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="talla" id="talla" value="M">
+                    <label class="form-check-label" for="inlineRadio2">M</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="talla" id="talla" value="G">
+                    <label class="form-check-label" for="inlineRadio2">G</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="talla" id="talla" value="N/A">
+                    <label class="form-check-label" for="inlineRadio2">N/A</label>
+                  </div>
+                  <div class="mb-2">
+                    <label for="color" class="form-label">Cantidad</label>
+                    <input style="height: 1.7em" class="form-control formulario" type="text" value=""
+                      placeholder="Define la cantidad de producto adquirido" id="cantidad">
+                  </div>
+                  <div class="form-group"><br>
+                    <label for="exampleFormControlFile1">Agregar archivo</label>
+                    <input style="height: 1.7em" type="file" class="form-control-file" id="archivo">
+                  </div>
+                  <br>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <button class="button" type="submit" id="btnModify"><span> Modificar Producto</span></button>
+                      </div>
+                      <div class="col">
+                        <button class="button" type="submit" id="btnDelete"><span> Borrar producto</span></button>
+                      </div>
+                    </div>
+
+
+
+                    <a class="btnRegresar" href="paginaPrincipal.html" type="button" style="margin-left: 25em;">Ir a
+                      ConsultaFit</a>
+
+
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+      <script src="/javascript/formularioDPProducto.js"></script>
+      <!-- <script src="/javascript/extraerProductosServidor.js"></script> -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
