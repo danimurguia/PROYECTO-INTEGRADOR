@@ -29,7 +29,7 @@ const fetchData = async () => {
 
 let pintarCards = data => {
     data.forEach(producto => {
-        if(producto.categoria == "Accesorios"){
+        if(producto.categoria == "Deportes"){
 
             templateCard.querySelector('h5').textContent = producto.nombre;
             templateCard.querySelector('p').textContent = "$" + producto.precio;
