@@ -65,9 +65,21 @@
             </a>
           </li>
         </ul>
-        <form class="d-flex">
-          <a class="btn btn-outline-light" type="submit" href="/html/inicioSesion.html">Iniciar Sesión | Registro</a>
-        </form>
+        <span id="userName" style="color: white;" hidden>Paola Pedraza</span>
+          <a id="carritoIcon" type="button" class="btn btn-link btn-floating btn-lg text-white m-1"
+              href="/html/carrito.html" role="button"
+              data-mdb-ripple-color=white>
+              <i class="bi bi-cart3"></i> 
+            </a>
+            <a id="logInIcon" type="button" class="btn btn-link btn-floating btn-lg text-white m-1"
+              href="/html/inicioSesion.html" role="button"
+              data-mdb-ripple-color=white>
+              <i class="bi bi-person-circle"></i>
+            </a>
+            <a id="logOutIcon" onclick="logOutUser()" type="button" class="btn btn-link btn-floating btn-lg text-white m-1" role="button"
+              data-mdb-ripple-color=white hidden>
+              <i  class="bi bi-person-x-fill"></i>
+            </a>
       </div>
     </div>
   </nav>
@@ -196,6 +208,8 @@
       </div>
       <!-- Copyright -->
     </footer>
+    <script src="../javascript/utility/jwt.js"></script>
+<script src="../javascript/utility/navBar.js"></script>
 </body>
 
 </html>
