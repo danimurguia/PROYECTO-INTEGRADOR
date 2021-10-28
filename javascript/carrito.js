@@ -1,17 +1,17 @@
 const cards = document.getElementById('cards')
 const items = document.getElementById('items')
 const footer = document.getElementById('footer')
-const templateCard = document.getElementById('template-card').content
 const templateFooter = document.getElementById('template-footer').content
 const templateCarrito = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment()
 let carrito = {}
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetchData()
+    //fetchData()
     if(localStorage.getItem('carrito')){
         carrito = JSON.parse(localStorage.getItem('carrito'))
-        pintarCarrito ()
+        console.log(carrito)
+        pintarCarrito()
     }
 })
 cards.addEventListener('click', e =>{
@@ -21,30 +21,6 @@ cards.addEventListener('click', e =>{
 items.addEventListener('click', e => {
     btnAccion(e)
 })
-
-const fetchData = async () => {
-    try{
-        const res = await fetch('/JSON/dbSimulada.json')
-        const data = await res.json()
-        pintarCards(data)
-    }catch (error){
-        console.log(error)
-    }
-}
-
-const pintarCards = data => {
-    data.forEach(producto =>{
-        templateCard.querySelector('h5').textContent = producto.title
-        templateCard.querySelector('p').textContent= producto.precio
-        //templateCard.querySelector('img').serAttribute("src", producto.imagen)
-        templateCard.querySelector('.btn-dark').dataset.id = producto.id
-
-        const clone = templateCard.cloneNode(true)
-        fragment.appendChild(clone)
-    })
-    cards.appendChild(fragment)
-
-}
 
 const addCarrito = e =>{
     if(e.target.classList.contains('btn-dark')){
@@ -67,7 +43,6 @@ const setCarrito = objeto => {
     }
 carrito[producto.id] = {...producto}
 pintarCarrito()
-
 }
 
 const pintarCarrito = () => {
@@ -78,7 +53,7 @@ const pintarCarrito = () => {
         templateCarrito.querySelectorAll('td')[1].textContent = producto.cantidad
         templateCarrito.querySelector('.btn-info').dataset.id = producto.id
         templateCarrito.querySelector('.btn-danger').dataset.id = producto.id
-        templateCarrito.querySelector('span').textContent = producto.cantidad * producto.precio
+        templateCarrito.querySelector('span').textContent = (producto.cantidad * producto.precio).toFixed(2)
 
         const clone = templateCarrito.cloneNode(true)
         fragment.appendChild(clone)
@@ -91,6 +66,7 @@ const pintarCarrito = () => {
     localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
+//Tabla resumen
 const pintarFooter = () =>{
     footer.innerHTML = ''
     if(Object.keys(carrito).length === 0){
@@ -100,7 +76,7 @@ const pintarFooter = () =>{
         return
     }
     const nCantidad = Object.values(carrito).reduce((acc, {cantidad}) => acc + cantidad,0)
-    const nPrecio = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio,0)
+    const nPrecio = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio,0).toFixed(2)
 
     templateFooter.querySelectorAll('td')[0].textContent = nCantidad
     templateFooter.querySelector('span').textContent = nPrecio
@@ -115,6 +91,7 @@ const pintarFooter = () =>{
         pintarCarrito()
     })
 }
+
 
 const btnAccion = e => {
     //Aumenta
