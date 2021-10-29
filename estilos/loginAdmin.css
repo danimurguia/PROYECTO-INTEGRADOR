@@ -208,3 +208,19 @@ footer img{
 .loginAdmin:hover{
   opacity: 50%;
 }
+
+.contenedor__login-register form {
+  width: 100%;
+  padding: 80px 20px;
+  background: white;
+  position: absolute;
+  border-radius: 20px;
+  margin-bottom:40px;
+ 
+}
+.caja__trasera{
+  padding: 0%;
+  
+}
+
+
