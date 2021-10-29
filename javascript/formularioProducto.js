@@ -1,4 +1,6 @@
-
+if(!jwtIsActive() || getRoleJwt()!=="ADMINISTRADOR" ){
+    document.location.href="/html/loginAdmin.html";
+}
 let products = [];
 var refid;
 var data;
@@ -75,6 +77,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('btnSubmit').addEventListener('click', addProduct);
 });
 
-    
-
+function logOutAdmin(){
+    localStorage.setItem('jwt-token', "");
+    document.location.href="/html/loginAdmin.html";
+}
 

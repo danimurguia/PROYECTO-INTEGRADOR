@@ -1,3 +1,12 @@
+function decrypJwt(){
+  var base64url = localStorage.getItem("jwt-token").split('.')[1];
+    var base64 = decodeURIComponent(atob(base64url).split('').map((c)=>{
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+    let jwtJson = JSON.parse(base64);
+    return jwtJson;
+}
+
 function jwtIsActive(){
   try{
     let jwtJson = decrypJwt();
@@ -27,11 +36,13 @@ function getUsernameJwt(){
   }
 }
 
-function decrypJwt(){
-  var base64url = localStorage.getItem("jwt-token").split('.')[1];
-    var base64 = decodeURIComponent(atob(base64url).split('').map((c)=>{
-        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-    }).join(''));
-    let jwtJson = JSON.parse(base64);
-    return jwtJson;
+function getRoleJwt(){
+  try{
+    let jwtJson = decrypJwt();
+    console.log(jwtJson.role);
+    return jwtJson.role;
+  }catch(error){
+    console.log(error)
+    return false;
+  }
 }

@@ -185,3 +185,44 @@ function mostrarContrasena(){
         tipo3.type = "password";
     }
 }
+
+
+async function logInAdministrador(){
+    let correo = document.getElementById("correoLogIn").value;
+    let contrasenia = document.getElementById("contraseniaLogIn").value;
+    
+    try {
+        const res = await fetch('http://localhost:8080/login-admin',  {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(
+                {
+                    "correo":correo,
+                    "contrasenia":contrasenia
+                }
+            ) 
+        })
+
+        const statusCode = await res.status;
+        const result = await res.text() //respuesta del endpoint(jwtToken)
+
+        if(statusCode === 200){
+            console.log(result)
+            localStorage.setItem('jwt-token', result);
+            //redirect to index
+            document.location.href="/html/formularioProducto.html";
+        }else{
+            localStorage.setItem('jwt-token', "" );
+            console.log(result)
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: result 
+            })
+        }
+    }catch (error){
+        console.log(error)
+    }
+}
