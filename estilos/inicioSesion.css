@@ -213,3 +213,7 @@ footer img{
   opacity: 50%;
 }
 
+.contenedor__login-register form{
+  margin-bottom: 35px;
+}
+
