@@ -1,4 +1,7 @@
-
+//if jwt is active && if is a admin jwt 
+if(!jwtIsActive() || getRoleJwt()!=="ADMINISTRADOR" ){
+    document.location.href="/html/loginAdmin.html";
+}
 let products = [];
 var refid;
 var data;
@@ -136,6 +139,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+function logOutAdmin(){
+    localStorage.setItem('jwt-token', "");
+    document.location.href="/html/loginAdmin.html";
+}
 
 
 
