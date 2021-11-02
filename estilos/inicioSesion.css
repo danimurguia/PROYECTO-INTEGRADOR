@@ -187,33 +187,27 @@ footer img{
 	left: 0px;
 }
 
-.logoCodeFooter{
-  position: relative;
-  width: 11.5%;
-  left: 38.5%;
- 
-}
-.logoCodeFooter:hover{
-  opacity: 50%;
-}
-
-.headerLogoFooter{
-  position: absolute;
-  right: 13%;
-  
-  
-}
-
-.loginAdmin{
-  position: absolute;
- 
-  left: 5%;
-}
-.loginAdmin:hover{
-  opacity: 50%;
-}
 
 .contenedor__login-register form{
   margin-bottom: 35px;
 }
 
+.btn-link:hover{
+  opacity: 70%;
+  }
+  
+  
+  .text-black:hover{
+    opacity: 70%;
+  
+  }
+  
+  .logoCodeFooter:hover{
+    opacity: 70%;
+  }
+  
+  .loginAdminSize{
+  font-size: 17px;
+  color: black;
+  font-weight: 550;
+  }

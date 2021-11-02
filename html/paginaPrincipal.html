@@ -94,9 +94,9 @@
   </header>
 
   <!-- Aqui esta el carrousel -->
-  <div class="contenedorCarrusel">
+  <div  class="contenedorCarrusel">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
+      <div  class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
@@ -104,10 +104,10 @@
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
           aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a href="../html/nutricion.html"><img src="../Imagenes/paginaPrincipal/Planes-de-entrenamiento_Conocdemas.png" class="d-block w-100" alt="Promoción 1"></a>
-          <div class="carousel-caption d-none d-md-block">
+      <div  class="carousel-inner">
+        <div  class="carousel-item active">
+          <a  href="../html/nutricion.html"><img  src="../Imagenes/paginaPrincipal/Planes-de-entrenamiento_Conocdemas.png" class="d-block w-100 " alt="Promoción 1"></a>
+          <div  class="carousel-caption d-none d-md-block">
           </div>
         </div>
         <div class="carousel-item">
@@ -116,7 +116,7 @@
           </div>
         </div>
         <div class="carousel-item">
-        <a href="../html/entrenamiento.html"> <img src="../Imagenes/paginaPrincipal/Entrenadores_veraqui.png" class="d-block w-100" alt="Promoción 3"></a>
+        <a href="/html/entrenamiento.html"> <img src="../Imagenes/paginaPrincipal/Entrenadores_veraqui.png" class="d-block w-100" alt="Promoción 3"></a>
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
@@ -124,12 +124,12 @@
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
         data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span class="visually-hidden">Anterior</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
         data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span class="visually-hidden">Siguiente</span>
       </button>
     </div>
   </div>
@@ -187,7 +187,7 @@
     </div>
   
   <!-- Aqui esta el carrousel -->
-  <div class="bannerCarrusel" style="margin: 20px;">
+  <div class="bannerCarrusel" style="margin: 1.25em;">
     <div id="yp" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -253,14 +253,35 @@
       </section>
       <!-- Section: Social media -->
     </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+     <!--Grid column-->
+     <div >
       
-      © 2021 Consulta Fit <span onclick= "window.open('/html/loginAdmin.html')" type = "submit" class = "loginAdmin">Login Admin</span><span class = "headerLogoFooter">Desarrollado por</span>
-      <img type="button" class = "logoCodeFooter"  src="/Imagenes/logoNegroRectangulo1.svg" alt="logoCodeFooter" onclick= "window.open('/html/sobreDesarrolladores.html')">
+
+      <ul class="list-unstyled mb-0">
+        <li>
+          <p class ="loginAdminSize" onclick= "window.open('/html/loginAdmin.html')" type = "submit" class="text-black">Login Admin</h6>
+        </li>
+        <li style="color: black;">Desarrollado por
+          <img class="logoCodeFooter" style="width: 8em;" src="/Imagenes/logoNegroRectangulo1.svg"  onclick= "window.open('/html/sobreDesarrolladores.html')" class="text-black">  </img>
+        </li>
+        
+      </ul>
     </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+  
+    
+    
+
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);"> 
+     
+      © 2021 Consulta Fit 
+  </div>
     <!-- Copyright -->
   </footer>
   <script src="../javascript/utility/jwt.js"></script>

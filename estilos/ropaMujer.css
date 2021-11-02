@@ -1,20 +1,5 @@
-.logoCodeFooter{
-  position: absolute;
-  width: 11.5%;
-  right: 1%;
-}
-.logoCodeFooter:hover{
-  opacity: 50%;
-}
 
-.headerLogoFooter{
-  position: absolute;
-  right: 13%;
-  
-  
-}
 .container{
-height: 450px;
 padding: 10px;
 }
 
@@ -26,14 +11,7 @@ padding: 10px;
   padding: 10px;
 }
 
-.loginAdmin{
-  position: absolute;
- 
-  left: 5%;
-}
-.loginAdmin:hover{
-  opacity: 50%;
-}
+
 
 .card{
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -132,125 +110,28 @@ px
 }
 
 
-.logoCodeFooter{
-  position: absolute;
-  width: 11.5%;
-  right: 1%;
- 
-}
-.logoCodeFooter:hover{
-  opacity: 50%;
-}
 
-.headerLogoFooter{
-  position: absolute;
-  right: 13%;
+
+
+
+
+
+.btn-link:hover{
+  opacity: 70%;
+  }
   
   
-}
-
-.loginAdmin{
-  position: absolute;
- 
-  left: 5%;
-}
-.loginAdmin:hover{
-  opacity: 50%;
-}
-
-.lineBreak{
-  white-space: pre-line;
-}
-
-.card{
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-.btn-dark{
-  background-color: rgb(5, 5, 5);
-}
-
-.btn-dark:hover{
-  background-color: rgb(245, 26, 26);
-}
-
- .btn-dark:active {
-  color: #fff;
-  background-color: rgb(245, 26, 26);
-  border-color: rgb(245, 26, 26);
-}
-.btn-dark:focus {
-  color: #fff;
-  background-color: rgb(245, 26, 26);
-  border-color: rgb(245, 26, 26);
-}
-
-
-.btn-primary.dropdown-toggle {
-  /* color: rgb(255, 255, 255); */
-  background-color: rgb(245, 26, 26);
-   border-color: rgb(206, 82, 60); 
-}
-
-.btnComprar:hover{
-  background-color: rgb(245, 26, 26);
-}
-
-.btnComprar:active{
-  background-color: rgb(245, 26, 26);
-}
-
-.btnComprar:focus {
-  color: #fff;
-  background-color: rgb(245, 26, 26);
-  border-color: rgb(245, 26, 26);
-}
-
-.btnComprar:focus {
-  color: #fff;
-  background-color: rgb(245, 26, 26);
-  border-color: rgb(245, 26, 26);
-}
-
-.alert-fixed {
-  position:sticky; 
-  top: 48px; 
-  left: 0px; 
-  width: 100%;
-  z-index:9999;
-  border-radius:5px;
-  display: none;
-}
-
-.modal-title {
-  margin-bottom: 0;
-  line-height: 1.5;
-  color: #fff;
-}
-.modal-header {
+  .text-black:hover{
+    opacity: 70%;
   
-  background-color: rgba(238, 24, 24, 0.945);
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1
-rem
-1
-rem
-;
-  border-bottom: 1
-px
-solid #dee2e6;
-  border-top-left-radius: calc(0.3
-rem
-- 1
-px
-);
-  border-top-right-radius: calc(0.3
-rem
-- 1
-px
-);
-}
-
-
+  }
+  
+  .logoCodeFooter:hover{
+    opacity: 70%;
+  }
+  
+  .loginAdminSize{
+  font-size: 17px;
+  color: black;
+  font-weight: 550;
+  }

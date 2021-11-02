@@ -1,50 +1,61 @@
 h1{
-	font-size: 100px;
+	font-size: 6.25em;
   text-align: center;
 	font-weight: bold;
 }
 
 h2{
-  font-size: 50px;
-	margin-left: 40px;
-	margin-right: 30px;
+  font-size: 2.5em;
+	margin-left: 2.5em;
+	margin-right: 1.875em;
 	text-align: center;
 	background-color: red;
 	opacity: 0.75;
 	color: white;
 }
 
+.titulosH{
+	font-size: 2.5em;
+	margin-left: 2.5em;
+	margin-right: 1.875em;
+	text-align: center;
+	background-color: red;
+	opacity: 0.75;
+	color: white;
+}
+
+
 h3{
-	font-size: 35px;
-	margin-left: 50px;
-	margin-right: 50px;
+	font-size: 2.1875em;
+	margin-left: 3.125em;
+	margin-right: 3.125em;
 }
 
 h4{
-  font-size: 30px;
-	margin-left: 40px;
-	margin-right: 50px;
+  font-size: 1.875em;
+	margin-left: 2.5em;
+	margin-right: 3.125em;
 	text-align: justify;
 }
 
 h5{
-	font-size: 25px;
-	margin-left: 50px;
-	margin-right: 50px;
+	font-size: 1.5625em;
+	margin-left: 3.125em;
+	margin-right: 3.125em;
 }
 
 h6{
-	font-size: 25px;
-	margin-left: 40px;
-	margin-right: 40px;
+	font-size: 1.5625em;
+	margin-left: 2.5em;
+	margin-right: 2.5em;
 	text-align: justify;
 }
 
 .listado{
-  font-size: 25px;
+  font-size: 1.5625em;
 	font-style: italic;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 3.125em;
+	margin-right: 3.125em;
 }
 
 *{
@@ -62,8 +73,8 @@ body{
 }
 
 .wrap{
-	width: 1100px;
-	margin: 50px auto;
+	width: 68.75em;
+	margin: 3.125em;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -75,14 +86,14 @@ body{
 }
 
 .tarjeta-wrap{
-	margin: 10px;
+	margin: 0.625em;
 	-webkit-perspective: 800;
 	perspective: 800;
 }
 
 .tarjeta{
-	width: 300px;
-	height: 350px;
+	width: 18.75em;
+	height: 21.875em;
 	background: black;
 	position: relative;
 	-webkit-transform-style: preserve-3d;
@@ -114,7 +125,7 @@ body{
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 
-	padding: 15px;
+	padding: 0.9375;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -158,28 +169,25 @@ footer img{
 	left: 0px;
 }
 
-.logoCodeFooter{
-  position: relative;
-  width: 11.5%;
-  left: 38.5%;
- 
-}
-.logoCodeFooter:hover{
-  opacity: 50%;
-}
 
-.headerLogoFooter{
-  position: absolute;
-  right: 13%;
-  
-  
-}
 
-.loginAdmin{
-  position: absolute;
- 
-  left: 5%;
-}
-.loginAdmin:hover{
-  opacity: 50%;
-}
+.btn-link:hover{
+	opacity: 70%;
+	}
+	
+	
+	.text-black:hover{
+		opacity: 70%;
+	
+	}
+	
+	.logoCodeFooter:hover{
+		opacity: 70%;
+	}
+	
+	.loginAdminSize{
+		font-size: 17px;
+		color: black;
+		font-weight: 550;
+		}
+		

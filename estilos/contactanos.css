@@ -1,7 +1,11 @@
 
-body{
-  background-image: url(../Imagenes/fondo.jpg);
-}
+
+ body{
+
+  background-image: url(/Imagenes/fondo.jpg);
+  
+
+} 
 .titulo{
   text-align: center;
   color: rgba(25,25,25,255); 
@@ -44,26 +48,24 @@ margin-top: -2.5em;
 }
 
 
-.logoCodeFooter{
-  position: absolute;
-  width: 11.5%;
-  right: 1%;
- 
-}
-.logoCodeFooter:hover{
-  opacity: 50%;
-}
 
-.headerLogoFooter{
-  position: absolute;
-  right: 13%;
-}
 
-.loginAdmin{
-  position: absolute;
- 
-  left: 5%;
-}
-.loginAdmin:hover{
-  opacity: 50%;
-}
+.btn-link:hover{
+  opacity: 70%;
+  }
+  
+  
+  .text-black:hover{
+    opacity: 70%;
+  
+  }
+  
+  .logoCodeFooter:hover{
+    opacity: 70%;
+  }
+  
+  .loginAdminSize{
+  font-size: 17px;
+  color: black;
+  font-weight: 550;
+  }

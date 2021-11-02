@@ -1,28 +1,4 @@
-.logoCodeFooter{
-  position: absolute;
-  width: 11.5%;
-  right: 1%;
- 
-}
-.logoCodeFooter:hover{
-  opacity: 50%;
-}
 
-.headerLogoFooter{
-  position: absolute;
-  right: 13%;
-  
-  
-}
-
-.loginAdmin{
-  position: absolute;
- 
-  left: 5%;
-}
-.loginAdmin:hover{
-  opacity: 50%;
-}
 .card{
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
@@ -138,3 +114,22 @@ px
   border-color: rgb(245, 26, 26);
 }
 
+.btn-link:hover{
+  opacity: 70%;
+  }
+  
+  
+  .text-black:hover{
+    opacity: 70%;
+  
+  }
+  
+  .logoCodeFooter:hover{
+    opacity: 70%;
+  }
+  
+  .loginAdminSize{
+  font-size: 17px;
+  color: black;
+  font-weight: 550;
+  }
