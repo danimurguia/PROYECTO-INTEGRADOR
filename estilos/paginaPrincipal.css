@@ -4,42 +4,37 @@
 }
 
 .contenedorCarrusel img{
-  height: 650px;
+width: 100%;
+ max-height: 37.5em;
+ 
 }
 .bannerCarrusel img{
-  height: 230px;
+  width: 100%;
+  
 }
 
-.loginAdmin{
-  position: absolute;
- 
-  left: 5%;
-}
-.loginAdmin:hover{
-  opacity: 50%;
+.btn-link:hover{
+opacity: 70%;
 }
 
 
-.logoCodeFooter{
-  position: absolute;
-  width: 11.5%;
-  right: 1%;
+.text-black:hover{
+  opacity: 70%;
+
 }
+
 .logoCodeFooter:hover{
-  opacity: 50%;
+  opacity: 70%;
 }
 
-.headerLogoFooter{
-  position: absolute;
-  right: 13%;
+.loginAdminSize{
+font-size: 17px;
+color: black;
+font-weight: 550;
 }
 
 
-/*Página principal body*/
 
-body{
-
-}
 
 .cajaPao{
   -webkit-box-shadow: 6px 4px 13px -3px rgba(0,0,0,0.69); 
