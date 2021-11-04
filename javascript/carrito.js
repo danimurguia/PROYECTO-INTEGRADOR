@@ -23,7 +23,7 @@ items.addEventListener('click', e => {
 })
 
 const addCarrito = e =>{
-    if(e.target.classList.contains('btn-dark')){
+    if(e.target.classList.contains('btn-secondary')){
         setCarrito(e.target.parentElement)
     }
 
@@ -32,7 +32,7 @@ const addCarrito = e =>{
 
 const setCarrito = objeto => {
     const producto = {
-        id: objeto.querySelector('.btn-dark').dataset.id,
+        id: objeto.querySelector('.btn-secondary').dataset.id,
         title:objeto.querySelector('h5').textContent,
         precio: objeto.querySelector('p').textContent,
         cantidad: 1
@@ -51,8 +51,8 @@ const pintarCarrito = () => {
         templateCarrito.querySelector('th').textContent = producto.id
         templateCarrito.querySelectorAll('td')[0].textContent = producto.title
         templateCarrito.querySelectorAll('td')[1].textContent = producto.cantidad
-        templateCarrito.querySelector('.btn-info').dataset.id = producto.id
-        templateCarrito.querySelector('.btn-danger').dataset.id = producto.id
+        templateCarrito.querySelector('.btn-dark').dataset.id = producto.id
+        templateCarrito.querySelector('.btn-secondary').dataset.id = producto.id
         templateCarrito.querySelector('span').textContent = (producto.cantidad * producto.precio).toFixed(2)
 
         const clone = templateCarrito.cloneNode(true)
@@ -95,14 +95,14 @@ const pintarFooter = () =>{
 
 const btnAccion = e => {
     //Aumenta
-    if(e.target.classList.contains('btn-info')){
+    if(e.target.classList.contains('btn-dark')){
         const producto = carrito[e.target.dataset.id]
         producto.cantidad++
         carrito[e.target.dataset.id] = {...producto}
         pintarCarrito()
     }
         //Disminuye
-        if(e.target.classList.contains('btn-danger')){
+        if(e.target.classList.contains('btn-secondary')){
             const producto = carrito[e.target.dataset.id]
             producto.cantidad--
             if (producto.cantidad === 0){
