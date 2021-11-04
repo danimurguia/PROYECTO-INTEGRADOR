@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../estilos/compra.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="sweetalert2.min.css">
+  <title>Contáctanos</title>
+  <link rel="shortcut icon" href="/Imagenes/ConsultaFit.ico">
+</head>
+<body>
+  <!-- Barra de navegacion -->
+<header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <img width="12%" type="button"   src="/Imagenes/logoCfit3.svg" alt="logoCfit" onclick= "window.location.href = ('/html/paginaPrincipal.html')">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Equipamiento
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="articulos.html">Accesorios</a></li>
+                <li><a class="dropdown-item" href="deportes.html">Especializados</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Consultoría
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="entrenamiento.html">Entrenamiento</a></li>
+                    <li><a class="dropdown-item" href="nutricion.html">Nutrición</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Ropa
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="ropaMujer.html">Mujer</a></li>
+                    <li><a class="dropdown-item" href="ropaHombre.html">Hombre</a></li>
+                  </ul>
+                </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobreNosotros.html">Sobre nosotros
+                </a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactanos.html">Contáctanos
+              </a>
+            </li>
+              </ul>
+              <span id="userName" style="color: white;" hidden>Paola Pedraza</span>
+          <a id="carritoIcon" type="button" class="btn btn-link btn-floating btn-lg text-white m-1"
+              href="/html/carrito.html" role="button"
+              data-mdb-ripple-color=white>
+              <i class="bi bi-cart3"></i> 
+            </a>
+            <a id="logInIcon" type="button" class="btn btn-link btn-floating btn-lg text-white m-1"
+              href="/html/inicioSesion.html" role="button"
+              data-mdb-ripple-color=white>
+              <i class="bi bi-person-circle"></i>
+            </a>
+            <a id="logOutIcon" onclick="logOutUser()" type="button" class="btn btn-link btn-floating btn-lg text-white m-1" role="button"
+              data-mdb-ripple-color=white hidden>
+              <i  class="bi bi-person-x-fill"></i>
+            </a>
+            </div>
+          </div>
+        </nav>
+</header>
+
+<!-- Formulario compra -->
+  <div class="container" style="padding: 3em;">
+    <div class="row" style="padding-top: 3.5em;">
+      <div class="col-12"> 
+      </div>
+    </div>
+    <div class="row">
+      <div class= "col-12">
+        <div class="row justify-content-center">
+          <form class="seccion-form" method="post" action="javascript:enviarCorreo()">
+            <div class="mb-3">
+              <h1  class="titulo">Proceso de Compra</h1>
+              <label for="nombre"  class="form-label">Nombre completo</label>
+              <input type="text"  style = "height: 1.9em;" class="form-control formulario "  id="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="celular" class="form-label">Teléfono</label>
+                <input style = "height: 1.9em;" class="form-control formulario" type="text" placeholder="Ingresa tu celular a 10 dígitos" pattern="^\d{10}$" id="celular" maxlength="10" required>
+              </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Entrega a domicilio</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Punto medio</label>
+              </div>
+              <br>
+            <br>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Instrucciones de entrega</label>
+                <textarea class="form-control formulario" id="mensaje" rows="3" placeholder="¿Dónde te veo para entregarte?" required></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Recuerda que todos los pagos son en efectivo</label>
+            </div>
+            <button id="botonEnviar" type="submit">Enviar</button>
+            <br><br>
+          </form>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script src="\javascript/compra.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+            type="button"
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            onclick= "window.open('https://www.facebook.com/Consultafit')"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-facebook"></i>
+          </a>
+            <!-- Instagram -->
+            <a
+            type="button"
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            onclick= "window.open('https://www.instagram.com/consultaafit/')"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-instagram"></i>
+              </a>
+                        <!-- Mail -->
+                        <a
+                        class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="/html/contactanos.html"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="bi bi-envelope-fill"></i>
+                    </a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!--Grid column-->
+     <div >
+      
+
+      <ul class="list-unstyled mb-0">
+        <li>
+          <p class ="loginAdminSize" onclick= "window.open('/html/loginAdmin.html')" type = "submit" class="text-black">Login Admin</h6>
+        </li>
+        <li style="color: black;">Desarrollado por
+          <img class="logoCodeFooter" style="width: 8em;" src="/Imagenes/logoNegroRectangulo1.svg"  onclick= "window.open('/html/codesignersConsultaFit.html')" class="text-black">  </img>
+        </li>
+        
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+  
+    
+    
+
+    <br> <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);"> 
+     
+      © 2021 Consulta Fit 
+  </div>
+    <!-- Copyright -->
+      </footer>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="../javascript/utility/jwt.js"></script>
+      <script src="../javascript/utility/navBar.js"></script>
+</body>
+</html>
